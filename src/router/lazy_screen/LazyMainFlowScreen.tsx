@@ -1,25 +1,24 @@
 import { lazy } from 'react';
 import { LazyComponentProvider } from '@providers';
 
-// const Blogs = lazy(() => import('@screens/main_flow/blogs/Blogs'));
-// const Bots = lazy(() => import('@screens/main_flow/bots/Bots'));
-// const Channel = lazy(() => import('@screens/main_flow/channel/Channel'));
-// const Games = lazy(() => import('@screens/main_flow/games/Games'));
-// const Groups = lazy(() => import('@screens/main_flow/groups/Groups'));
-// const Home = lazy(() => import('@screens/main_flow/home/Home'));
-// const Stickers = lazy(() => import('@screens/main_flow/stickers/Stickers'));
-// const Themes = lazy(() => import('@screens/main_flow/themes/Themes'));
-// const Search = lazy(() => import('@screens/main_flow/search/Search'));
+const About = lazy(() => import('@screens/mainFlow/About/About'));
+const Blogs = lazy(() => import('@screens/mainFlow/Blogs/Blogs'));
+const Contact = lazy(() => import('@screens/mainFlow/Contact/Contact'));
+const Experience = lazy(
+  () => import('@screens/mainFlow/Experience/Experience'),
+);
+const Home = lazy(() => import('@screens/mainFlow/Home/Home'));
+const Projects = lazy(() => import('@screens/mainFlow/Projects/Projects'));
+const Resume = lazy(() => import('@screens/mainFlow/Resume/Resume'));
+const Skills = lazy(() => import('@screens/mainFlow/Skills/Skills'));
 
-const Blogs = lazy(() => import('@screens/screen/Screen'));
-const Bots = lazy(() => import('@screens/screen/Screen'));
-const Channel = lazy(() => import('@screens/screen/Screen'));
-const Games = lazy(() => import('@screens/screen/Screen'));
-const Groups = lazy(() => import('@screens/screen/Screen'));
-const Home = lazy(() => import('@screens/screen/Screen'));
-const Stickers = lazy(() => import('@screens/screen/Screen'));
-const Themes = lazy(() => import('@screens/screen/Screen'));
-const Search = lazy(() => import('@screens/screen/Screen'));
+const LazyAboutScreen = () => {
+  return (
+    <LazyComponentProvider>
+      <About />
+    </LazyComponentProvider>
+  );
+};
 
 const LazyBlogsScreen = () => {
   return (
@@ -29,34 +28,18 @@ const LazyBlogsScreen = () => {
   );
 };
 
-const LazyBotsScreen = () => {
+const LazyContactScreen = () => {
   return (
     <LazyComponentProvider>
-      <Bots />
+      <Contact />
     </LazyComponentProvider>
   );
 };
 
-const LazyChannelScreen = () => {
+const LazyExperienceScreen = () => {
   return (
     <LazyComponentProvider>
-      <Channel />
-    </LazyComponentProvider>
-  );
-};
-
-const LazyGamesScreen = () => {
-  return (
-    <LazyComponentProvider>
-      <Games />
-    </LazyComponentProvider>
-  );
-};
-
-const LazyGroupsScreen = () => {
-  return (
-    <LazyComponentProvider>
-      <Groups />
+      <Experience />
     </LazyComponentProvider>
   );
 };
@@ -69,38 +52,37 @@ const LazyHomeScreen = () => {
   );
 };
 
-const LazyStickersScreen = () => {
+const LazyProjectsScreen = () => {
   return (
     <LazyComponentProvider>
-      <Stickers />
+      <Projects />
     </LazyComponentProvider>
   );
 };
 
-const LazyThemesScreen = () => {
+const LazyResumeScreen = () => {
   return (
     <LazyComponentProvider>
-      <Themes />
+      <Resume />
     </LazyComponentProvider>
   );
 };
 
-const LazySearchScreen = () => {
+const LazySkillsScreen = () => {
   return (
     <LazyComponentProvider>
-      <Search />
+      <Skills />
     </LazyComponentProvider>
   );
 };
 
 export {
+  LazyAboutScreen,
   LazyBlogsScreen,
-  LazyBotsScreen,
-  LazyChannelScreen,
-  LazyGamesScreen,
-  LazyGroupsScreen,
+  LazyContactScreen,
+  LazyExperienceScreen,
   LazyHomeScreen,
-  LazyStickersScreen,
-  LazyThemesScreen,
-  LazySearchScreen,
+  LazyProjectsScreen,
+  LazyResumeScreen,
+  LazySkillsScreen,
 };

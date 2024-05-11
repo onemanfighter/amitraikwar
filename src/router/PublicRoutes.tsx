@@ -5,44 +5,31 @@ import {
   createRoutesFromChildren,
 } from 'react-router-dom';
 import {
-  LazyAboutUsScreen,
+  LazyAboutScreen,
   LazyBlogsScreen,
-  LazyBotsScreen,
-  LazyChannelScreen,
-  LazyContactUsScreen,
-  LazyFeatureMediaScreen,
-  LazyGamesScreen,
-  LazyGroupsScreen,
+  LazyContactScreen,
+  LazyExperienceScreen,
   LazyHomeScreen,
-  LazyPrivacyPolicyScreen,
-  LazySearchScreen,
-  LazyStickersScreen,
-  LazyThemesScreen,
+  LazySkillsScreen,
+  LazyProjectsScreen,
+  LazyResumeScreen,
 } from './lazy_screen';
-import { Screen } from '@screens';
+import { MainScreen } from '@screens';
 
 const publicRouter = createBrowserRouter(
   createRoutesFromChildren(
-    <Route path="/" element={<Screen />}>
+    <Route path="/" element={<MainScreen />}>
       {/* Main screen routes. */}
       <Route path="" element={<Navigate to="/home" replace />} />
       <Route path="home" element={<LazyHomeScreen />} />
       {/* Main flow screen routes. */}
-      <Route path="search" element={<LazySearchScreen />} />
-      <Route path="channels" element={<LazyChannelScreen />} />
-      <Route path="groups" element={<LazyGroupsScreen />} />
-      <Route path="sticker" element={<LazyStickersScreen />} />
-      <Route path="bots" element={<LazyBotsScreen />} />
+      <Route path="about" element={<LazyAboutScreen />} />
+      <Route path="resume" element={<LazyResumeScreen />} />
+      <Route path="skills" element={<LazySkillsScreen />} />
+      <Route path="experience" element={<LazyExperienceScreen />} />
+      <Route path="projects" element={<LazyProjectsScreen />} />
       <Route path="blogs" element={<LazyBlogsScreen />} />
-      <Route path="themes" element={<LazyThemesScreen />} />
-      <Route path="games" element={<LazyGamesScreen />} />
-
-      {/* Static screen routes. */}
-      <Route path="about" element={<LazyAboutUsScreen />} />
-      <Route path="contact" element={<LazyContactUsScreen />} />
-      <Route path="feature" element={<LazyFeatureMediaScreen />} />
-      <Route path="privacy" element={<LazyPrivacyPolicyScreen />} />
-
+      <Route path="contact" element={<LazyContactScreen />} />
       <Route path="*" element={<Navigate to="/home" replace />} />
     </Route>,
   ),
