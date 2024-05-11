@@ -1,13 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ThemeProvider } from '@providers';
+import { LocalizationProvider, ThemeProvider } from '@providers';
 
 function App() {
   const { t } = useTranslation();
   return (
     <ThemeProvider>
       <React.StrictMode>
-        <div>{t('App')}</div>
+        <LocalizationProvider>
+          <div>{t('App')}</div>
+        </LocalizationProvider>
       </React.StrictMode>
     </ThemeProvider>
   );
