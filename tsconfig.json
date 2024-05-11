@@ -17,5 +17,10 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "cypress", "cypress.config.ts"]
+  "include": [
+    "src",
+    "cypress",
+    "cypress.config.ts",
+    "src/screens/mainFlow/Contact/Contact.tsx"
+  ]
 }

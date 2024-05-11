@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainScreen should render correctly 1`] = `
+<div>
+  <div
+    class="css-0"
+  >
+    <span
+      class="index-module_type__E-SaG"
+      style="font-size: 2em; display: inline-block;"
+    />
+    <p
+      class="chakra-text css-0"
+    >
+      MainScreen
+    </p>
+  </div>
+</div>
+`;
