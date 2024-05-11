@@ -13,14 +13,14 @@ module.exports = {
   moduleDirectories: ['node_modules', 'src'],
   moduleNameMapper: {
     // '@assets/(.*)': '<rootDir>/src/assets/$1',
-    // '@screens': '<rootDir>/src/screens',
+    '@screens': '<rootDir>/src/screens',
     '@store/slice': '<rootDir>/src/store/slice',
     '@store': '<rootDir>/src/store',
     '@selectors': '<rootDir>/src/store/selectors',
     '@components': '<rootDir>/src/components',
     '@localization': '<rootDir>/src/localization',
     '@providers': '<rootDir>/src/providers',
-    // '@router': '<rootDir>/src/router',
+    '@router': '<rootDir>/src/router',
   },
   transform: {
     '.+\\.(css|scss|png|jpg|svg)$': 'jest-transform-stub',
