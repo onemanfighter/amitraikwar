@@ -1,4 +1,4 @@
-export * from './theme_provider';
+export * from './themeProvider';
 export * from './localizationProvider';
-export * from './lazy_provider';
-export * from './router_provider';
+export * from './lazyProvider';
+export * from './routerProvider';

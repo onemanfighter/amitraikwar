@@ -1,3 +1,3 @@
-export * from './theme';
+export * from './Theme';
 
 export * from './TypeWriterText';

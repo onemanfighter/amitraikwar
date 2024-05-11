@@ -13,7 +13,7 @@ import {
   LazySkillsScreen,
   LazyProjectsScreen,
   LazyResumeScreen,
-} from './lazy_screen';
+} from './lazyScreen';
 import { MainScreen } from '@screens';
 
 const publicRouter = createBrowserRouter(
