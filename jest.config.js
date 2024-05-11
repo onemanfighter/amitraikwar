@@ -17,9 +17,9 @@ module.exports = {
     '@store/slice': '<rootDir>/src/store/slice',
     '@store': '<rootDir>/src/store',
     '@selectors': '<rootDir>/src/store/selectors',
-    // '@components': '<rootDir>/src/components',
+    '@components': '<rootDir>/src/components',
     '@localization': '<rootDir>/src/localization',
-    // '@providers': '<rootDir>/src/providers',
+    '@providers': '<rootDir>/src/providers',
     // '@router': '<rootDir>/src/router',
   },
   transform: {
