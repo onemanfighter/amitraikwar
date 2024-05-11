@@ -3,6 +3,8 @@
     "baseUrl": "./",
     "paths": {
       "@localization": ["src/localization"],
+      "@components": ["src/components"],
+      "@providers": ["src/providers"],
       "@store": ["src/store"],
       "@store/slice": ["src/store/slice"],
       "@selectors": ["src/store/selectors"]
