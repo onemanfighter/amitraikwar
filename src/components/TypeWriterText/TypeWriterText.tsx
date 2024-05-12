@@ -8,6 +8,7 @@ const TypeWriterText = ({
   wrapper = 'span',
   typeSpeed = Speed.medium,
   deleteSpeed = Speed.medium,
+  styles = { fontSize: '1em', display: 'inline-block' },
 }: TypeWriterTextProps) => {
   const sequence = textSequence.flatMap(({ text, wait }) => [
     fixedText + text,
@@ -20,7 +21,7 @@ const TypeWriterText = ({
       wrapper={wrapper}
       speed={TransformToSpeed[typeSpeed]}
       deletionSpeed={TransformToSpeed[deleteSpeed]}
-      style={{ fontSize: '2em', display: 'inline-block' }}
+      style={styles}
       repeat={Infinity}
     />
   );

@@ -12,7 +12,8 @@ module.exports = {
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   moduleDirectories: ['node_modules', 'src'],
   moduleNameMapper: {
-    // '@assets/(.*)': '<rootDir>/src/assets/$1',
+    '@assets/(.*)': '<rootDir>/src/assets/$1',
+    '@assets': '<rootDir>/src/assets',
     '@screens': '<rootDir>/src/screens',
     '@store/slice': '<rootDir>/src/store/slice',
     '@store': '<rootDir>/src/store',
