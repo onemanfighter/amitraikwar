@@ -10,6 +10,10 @@ import {
   LazySkillsScreen,
 } from '../LazyMainFlowScreen';
 
+jest.mock('react-social-icons', () => ({
+  SocialIcon: ({ url }: { url: string }) => <div>{url}</div>,
+}));
+
 describe('LazyMainFlowScreen', () => {
   it('should render lazy home screen', async () => {
     const { container } = render(<LazyHomeScreen />);

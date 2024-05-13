@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import HeaderText from '../HeaderText';
 import { ThemeProvider } from '@providers';
-import { CSSReset } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
+
+jest.mock('react-social-icons', () => ({
+  SocialIcon: ({ url }: { url: string }) => <div>{url}</div>,
+}));
 
 describe('Header Text', () => {
   it('should renders correctly', () => {

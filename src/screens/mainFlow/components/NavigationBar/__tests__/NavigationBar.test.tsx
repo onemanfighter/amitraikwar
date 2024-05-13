@@ -3,6 +3,10 @@ import { BrowserRouter } from 'react-router-dom';
 import NavigationBar from '../NavigationBar';
 import { ThemeProvider } from '@providers';
 
+jest.mock('react-social-icons', () => ({
+  SocialIcon: ({ url }: { url: string }) => <div>{url}</div>,
+}));
+
 describe('NavigationBar', () => {
   it('should renders correctly', () => {
     const { container } = render(

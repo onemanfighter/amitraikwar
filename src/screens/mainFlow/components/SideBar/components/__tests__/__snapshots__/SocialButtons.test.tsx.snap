@@ -3,19 +3,35 @@
 exports[`Social buttons should renders correctly 1`] = `
 <div>
   <div
-    class="css-1u19ggm"
+    class="css-vetxw3"
   >
-    <div>
-      https://in.linkedin.com/in/amitrai1603
+    <div
+      class="css-x988sr"
+    >
+      <div>
+        https://in.linkedin.com/in/amitrai1603
+      </div>
     </div>
-    <div>
-      https://github.com/onemanfighter
+    <div
+      class="css-x988sr"
+    >
+      <div>
+        https://github.com/onemanfighter
+      </div>
     </div>
-    <div>
-      https://github.com/raikwaramit
+    <div
+      class="css-x988sr"
+    >
+      <div>
+        https://github.com/raikwaramit
+      </div>
     </div>
-    <div>
-      https://amitraikwar.medium.com/
+    <div
+      class="css-x988sr"
+    >
+      <div>
+        https://amitraikwar.medium.com/
+      </div>
     </div>
   </div>
 </div>
