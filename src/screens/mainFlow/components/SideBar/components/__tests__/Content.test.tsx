@@ -1,19 +1,16 @@
 import { render } from '@testing-library/react';
-import MainScreen from '../MainScreen';
+import Content from '../Content';
 import { ThemeProvider } from '@providers';
-import { BrowserRouter } from 'react-router-dom';
 
 jest.mock('react-social-icons', () => ({
   SocialIcon: ({ url }: { url: string }) => <div>{url}</div>,
 }));
 
-describe('MainScreen', () => {
-  it('should render correctly', () => {
+describe('Content', () => {
+  it('renders correctly', () => {
     const { container } = render(
       <ThemeProvider>
-        <BrowserRouter>
-          <MainScreen />
-        </BrowserRouter>
+        <Content />
       </ThemeProvider>,
     );
 

@@ -1,4 +1,4 @@
-import { act, fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import TooltipButtons from '../TooltipButtons';
 
 const mockConsole = jest.spyOn(console, 'log');
