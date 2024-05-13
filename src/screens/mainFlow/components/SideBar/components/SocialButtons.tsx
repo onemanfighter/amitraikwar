@@ -1,17 +1,27 @@
-import { Box } from '@chakra-ui/react';
+import { Box, useColorMode } from '@chakra-ui/react';
 import { SOCIAL_MEDIA } from './constants';
 import { SocialIcon } from 'react-social-icons';
 
 const SocialButtons = () => {
+  const { colorMode } = useColorMode();
   return (
     <Box
-      border={'1px solid gray'}
       borderRadius={'lg'}
       boxShadow={'lg'}
+      margin={'4'}
       padding={'2'}
+      gap={3}
+      top={-10}
+      position={'relative'}
+      bg={colorMode === 'light' ? 'green.200' : 'green.700'}
+      flexDirection={'row'}
+      display={'flex'}
+      justifyContent={'center'}
     >
       {SOCIAL_MEDIA.map((social) => (
-        <SocialIcon key={social.url} url={social.url} target="blank" />
+        <Box key={social.url} paddingX={1}>
+          <SocialIcon key={social.url} url={social.url} target="blank" />
+        </Box>
       ))}
     </Box>
   );
