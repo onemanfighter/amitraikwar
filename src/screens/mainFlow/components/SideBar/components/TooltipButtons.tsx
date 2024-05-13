@@ -12,7 +12,7 @@ const TooltipButtons = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { t } = useTranslation();
   const onSearchClick = () => {
-    console.log('Search clicked');
+    console.log('Search button clicked');
   };
   return (
     <Box
@@ -28,11 +28,11 @@ const TooltipButtons = () => {
       <Button colorScheme="green" marginEnd={8}>
         {t('MainHomeScreen.sidebar.downloadCV')}
       </Button>
-      <Tooltip label="Search anything related to me " fontSize="xs">
+      <Tooltip label="" fontSize="xs">
         <IconButton
-          aria-label="Search"
+          aria-label=""
           icon={<SearchIcon />}
-          onClick={onSearchClick}
+          // onClick={onSearchClick}
           margin={'2'}
         />
       </Tooltip>

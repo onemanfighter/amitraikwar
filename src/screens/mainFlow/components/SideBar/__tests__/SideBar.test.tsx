@@ -1,14 +1,14 @@
 import { render } from '@testing-library/react';
-import MainScreen from '../MainScreen';
+import SideBar from '../SideBar';
 import { ThemeProvider } from '@providers';
 import { BrowserRouter } from 'react-router-dom';
 
-describe('MainScreen', () => {
-  it('should render correctly', () => {
+describe('Side bar', () => {
+  it('should renders correctly', () => {
     const { container } = render(
       <ThemeProvider>
         <BrowserRouter>
-          <MainScreen />
+          <SideBar />
         </BrowserRouter>
       </ThemeProvider>,
     );

@@ -1,3 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LazyMainFlowScreen should render 1`] = `<div />`;
+exports[`LazyMainFlowScreen should render lazy about screen 1`] = `<div />`;
+
+exports[`LazyMainFlowScreen should render lazy blogs screen 1`] = `<div />`;
+
+exports[`LazyMainFlowScreen should render lazy contact screen 1`] = `<div />`;
+
+exports[`LazyMainFlowScreen should render lazy experience screen 1`] = `<div />`;
+
+exports[`LazyMainFlowScreen should render lazy home screen 1`] = `<div />`;
+
+exports[`LazyMainFlowScreen should render lazy projects screen 1`] = `<div />`;
+
+exports[`LazyMainFlowScreen should render lazy resume screen 1`] = `<div />`;
+
+exports[`LazyMainFlowScreen should render lazy skills screen 1`] = `<div />`;
