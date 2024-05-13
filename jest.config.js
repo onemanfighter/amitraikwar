@@ -12,7 +12,8 @@ module.exports = {
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   moduleDirectories: ['node_modules', 'src'],
   moduleNameMapper: {
-    // '@assets/(.*)': '<rootDir>/src/assets/$1',
+    '@assets/(.*)': '<rootDir>/src/assets/$1',
+    '@assets': '<rootDir>/src/assets',
     '@screens': '<rootDir>/src/screens',
     '@store/slice': '<rootDir>/src/store/slice',
     '@store': '<rootDir>/src/store',
@@ -26,12 +27,12 @@ module.exports = {
     '.+\\.(css|scss|png|jpg|svg)$': 'jest-transform-stub',
     '^.+\\.(js|jsx|ts|tsx)$': 'ts-jest',
   },
-  // coverageThreshold: {
-  //   global: {
-  //     branches: 80,
-  //     functions: 80,
-  //     lines: 80,
-  //     statements: -10,
-  //   },
-  // },
+  coverageThreshold: {
+    global: {
+      branches: 50,
+      functions: 70,
+      lines: 70,
+      statements: 70,
+    },
+  },
 };

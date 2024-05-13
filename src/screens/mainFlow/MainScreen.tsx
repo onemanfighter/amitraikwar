@@ -1,22 +1,39 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Grid, GridItem, HStack, Stack, Text } from '@chakra-ui/react';
 import { TypeWriterText } from '@components';
 import { useTranslation } from 'react-i18next';
 import { Outlet } from 'react-router-dom';
+import { SideBar, NavigationBar } from './components';
 
 const MainScreen = () => {
   const { t } = useTranslation();
+
   return (
-    <Box>
-      <TypeWriterText
-        fixedText={t('App')}
-        textSequence={[
-          { text: 'Web developer', wait: 1000 },
-          { text: 'Mobile developer', wait: 1000 },
-        ]}
-      />
-      <Text>MainScreen</Text>
-      <Outlet />
-    </Box>
+    <Grid
+      maxWidth={'8xl'}
+      height={'100%'}
+      minHeight={'100vh'}
+      margin={'auto'}
+      templateColumns="repeat(7, 1fr)"
+    >
+      <GridItem colSpan={2}>
+        <SideBar />
+      </GridItem>
+      <GridItem colSpan={5} scrollBehavior={'auto'}>
+        <NavigationBar />
+        <Box
+          display={'flex'}
+          flexDirection={'column'}
+          justifyContent={'center'}
+          alignItems={'center'}
+          borderRadius={'lg'}
+          padding={'4'}
+          margin={'4'}
+          boxShadow={'lg'}
+        >
+          <Outlet />
+        </Box>
+      </GridItem>
+    </Grid>
   );
 };
 

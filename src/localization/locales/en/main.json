@@ -1,3 +1,22 @@
 {
-  "App": "App made by Amit"
+  "MainHomeScreen": {
+    "title": "Amit Raikwar",
+    "navigation": {
+      "title": "Amit Raikwar",
+      "button": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "projects": "Projects",
+        "skills": "Skills",
+        "resume": "Resume",
+        "blogs": "Blogs",
+        "contact": "Contact"
+      },
+      "version": "Version 1.0.0"
+    },
+    "sidebar": {
+      "downloadCV": "Download CV"
+    }
+  }
 }

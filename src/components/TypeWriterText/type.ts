@@ -4,6 +4,7 @@ export type TypeWriterTextProps = {
   typeSpeed?: Speed;
   deleteSpeed?: Speed;
   wrapper?: WrapperComponent;
+  styles?: React.CSSProperties;
 };
 
 export type WrapperComponent =
