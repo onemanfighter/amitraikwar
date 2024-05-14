@@ -1,9 +1,11 @@
-import { Box, Img, Text } from '@chakra-ui/react';
+import { Box, Img, Text, useColorMode } from '@chakra-ui/react';
 import { TypeWriterText } from '@components';
+import { color } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const { t } = useTranslation();
+  const { colorMode } = useColorMode();
 
   return (
     <Box
@@ -72,6 +74,50 @@ const Home = () => {
             loading="lazy"
           />
         </Box>
+      </Box>
+      <Box
+        display="flex"
+        width={'100%'}
+        flexDirection="column"
+        justifyContent="center"
+        marginTop={5}
+        bgGradient={
+          colorMode === 'light'
+            ? 'linear(to-r, green.200, blue.400)'
+            : 'linear(to-r, green.800, blue.900)'
+        }
+        boxShadow={'lg'}
+        padding={'4'}
+        borderRadius={'lg'}
+      >
+        <Text fontSize="2xl" fontWeight="bold" fontFamily={'monospace'}>
+          {t('HomeScreen.aboutMe.description')}
+        </Text>
+      </Box>
+      <Box>{/* Add project preview carousal here here*/}</Box>
+      <Box
+        display="flex"
+        width={'100%'}
+        flexDirection="column"
+        justifyContent="center"
+        marginTop={5}
+        bgGradient={
+          colorMode === 'light'
+            ? 'linear(to-r, green.200, blue.400)'
+            : 'linear(to-r, green.800, blue.900)'
+        }
+        boxShadow={'lg'}
+        padding={'4'}
+        borderRadius={'lg'}
+      >
+        <Text
+          fontSize="md"
+          fontWeight="500"
+          fontFamily={'monospace'}
+          align={'center'}
+        >
+          {t('HomeScreen.copyrightText')}
+        </Text>
       </Box>
     </Box>
   );
