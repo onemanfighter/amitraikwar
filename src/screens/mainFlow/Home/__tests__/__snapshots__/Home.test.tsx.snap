@@ -42,6 +42,27 @@ exports[`Home should render correctly 1`] = `
         />
       </div>
     </div>
+    <div
+      class="css-m38xl5"
+    >
+      <p
+        class="chakra-text css-5h1wpx"
+      >
+        I am a Software Engineer with 3 years of experience in building scalable🚀 and reliable🎯 software applications. I am passionate about building products that solve real-life problems and have a positive impact on society. I am a quick learner and always eager to learn new technologies and tools. I am a team player and love to work in a collaborative environment.
+      </p>
+    </div>
+    <div
+      class="css-0"
+    />
+    <div
+      class="css-m38xl5"
+    >
+      <p
+        class="chakra-text css-1h1lvy8"
+      >
+        © 2024 Amit Raikwar. All rights reserved. Designed and developed by Amit Raikwar.
+      </p>
+    </div>
   </div>
   <span
     hidden=""
