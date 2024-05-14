@@ -29,5 +29,16 @@
       },
       "post": "Software Engineer 3 @ RSLabs"
     }
+  },
+  "HomeScreen": {
+    "heyMessage": "Hey there! My name is",
+    "name": "Amit Raikwar",
+    "whatIdoText": {
+      "text0": "I brainstorm ideas! 💡",
+      "text1": "I design solutions! 🎨",
+      "text2": "I code! 💻",
+      "text3": "I test the code! 🧪",
+      "text4": "I deploy the code! 🚀"
+    }
   }
 }

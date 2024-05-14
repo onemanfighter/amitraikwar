@@ -21,14 +21,11 @@ const MainScreen = () => {
       <GridItem colSpan={5} scrollBehavior={'auto'}>
         <NavigationBar />
         <Box
-          display={'flex'}
-          flexDirection={'column'}
-          justifyContent={'center'}
-          alignItems={'center'}
           borderRadius={'lg'}
           padding={'4'}
           margin={'4'}
           boxShadow={'lg'}
+          minH="177vh"
         >
           <Outlet />
         </Box>
