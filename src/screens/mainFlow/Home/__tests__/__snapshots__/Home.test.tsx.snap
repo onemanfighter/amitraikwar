@@ -2,14 +2,50 @@
 
 exports[`Home should render correctly 1`] = `
 <div>
-  <div
-    class="css-0"
+  <script
+    id="chakra-script"
   >
-    <p
-      class="chakra-text css-0"
+    !(function(){try{var a=function(c){var v="(prefers-color-scheme: dark)",h=window.matchMedia(v).matches?"dark":"light",r=c==="system"?h:c,o=document.documentElement,s=document.body,l="chakra-ui-light",d="chakra-ui-dark",i=r==="dark";return s.classList.add(i?d:l),s.classList.remove(i?l:d),o.style.colorScheme=r,o.dataset.theme=r,r},n=a,m="light",e="chakra-ui-color-mode",t=localStorage.getItem(e);t?a(t):localStorage.setItem(e,a(m))}catch(a){}})();
+  </script>
+  <div
+    class="css-1nz51xq"
+  >
+    <div
+      class="css-15vhhhd"
     >
-      Home
-    </p>
+      <div
+        class="css-11d69m5"
+      >
+        <p
+          class="chakra-text css-3t2enw"
+        >
+          Hey there! My name is
+        </p>
+        <p
+          class="chakra-text css-k99qrb"
+        >
+          Amit Raikwar
+        </p>
+        <span
+          class="index-module_type__E-SaG"
+          style="font-size: 2em; font-weight: bold; text-align: center; font-family: monospace; align-self: start;"
+        />
+      </div>
+      <div
+        class="css-z2d797"
+      >
+        <img
+          alt="Illustration"
+          class="chakra-image css-rdnx5m"
+          loading="lazy"
+          src=""
+        />
+      </div>
+    </div>
   </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
 </div>
 `;
