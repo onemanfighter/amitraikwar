@@ -1,10 +1,10 @@
+import { useEffect } from 'react';
 import { ModalComponent } from '@components';
 import { ModalIDs, ModalOpenState, appStore } from '@store';
 import { modalSelector, useShallow } from '@selectors';
 
 import { ModalProviderProps } from './types';
-import { Modal, useDisclosure } from '@chakra-ui/react';
-import { useEffect } from 'react';
+import { useDisclosure } from '@chakra-ui/react';
 
 const ModalProvider = ({ children }: ModalProviderProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
