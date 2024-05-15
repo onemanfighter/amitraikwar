@@ -1,23 +1,21 @@
-export type ModalData = {
-  title: string;
-  message: string;
-  onModalClose?: () => void;
-  primaryButtonLabel?: string;
-  onPrimaryButtonClick?: () => void;
-};
+export enum ModalIDs {
+  NONE = 'none',
+  SEARCH = 'search',
+}
 
 export type ModalState = {
-  modalData: ModalData;
-  openState: ModelOpenState;
+  modalID?: ModalIDs;
+  onModalClose?: () => void;
+  modalOpenState: ModalOpenState;
 };
 
-export enum ModelOpenState {
+export enum ModalOpenState {
   OPEN = 'OPEN',
   CLOSE = 'CLOSE',
 }
 
 export interface ModalStateAction {
-  openModal: (modalData: ModalData) => void;
+  openModal: (modalData: ModalState) => void;
   closeModal: () => void;
 }
 

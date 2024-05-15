@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AppRouterProvider,
   LocalizationProvider,
+  ModalProvider,
   ThemeProvider,
 } from '@providers';
 
@@ -9,9 +10,11 @@ function App() {
   return (
     <ThemeProvider>
       <React.StrictMode>
-        <LocalizationProvider>
-          <AppRouterProvider />
-        </LocalizationProvider>
+        <ModalProvider>
+          <LocalizationProvider>
+            <AppRouterProvider />
+          </LocalizationProvider>
+        </ModalProvider>
       </React.StrictMode>
     </ThemeProvider>
   );

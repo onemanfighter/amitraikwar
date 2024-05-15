@@ -1,32 +1,28 @@
 import { AppStoreSlice } from '../../appStore/types';
-import { ModalState, ModalStateSlice, ModelOpenState } from './types';
+import { ModalState, ModalStateSlice, ModalOpenState, ModalIDs } from './types';
 
 const initialAlertState: ModalState = {
-  modalData: {
-    title: '',
-    message: '',
-    onModalClose: () => {},
-    primaryButtonLabel: '',
-    onPrimaryButtonClick: () => {},
-  },
-  openState: ModelOpenState.CLOSE,
+  modalID: undefined,
+  onModalClose: undefined,
+  modalOpenState: ModalOpenState.CLOSE,
 };
 
 const createModalSlice: AppStoreSlice<ModalStateSlice> = (set) => ({
   ...initialAlertState,
   openModal: (modalData) => {
     set((state) => {
-      state.Modal.modalData = modalData;
-      state.Modal.openState = ModelOpenState.OPEN;
+      state.Modal.modalID = modalData.modalID;
+      state.Modal.onModalClose = modalData.onModalClose;
+      state.Modal.modalOpenState = ModalOpenState.OPEN;
     });
   },
   closeModal: () => {
     set((state) => {
-      state.Modal.openState = ModelOpenState.CLOSE;
+      state.Modal.modalOpenState = ModalOpenState.CLOSE;
     });
     setTimeout(() => {
       set((state) => {
-        state.Modal.modalData = initialAlertState.modalData;
+        state.Modal.modalOpenState = initialAlertState.modalOpenState;
       });
     }, 500 /* 0.5s */);
   },

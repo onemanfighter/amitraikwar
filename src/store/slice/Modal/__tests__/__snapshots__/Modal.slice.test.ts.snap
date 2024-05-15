@@ -4,35 +4,30 @@ exports[`Modal slice should return modal selector state and actions 1`] = `
 {
   "Modal": {
     "closeModal": [Function],
-    "modalData": {
-      "message": "",
-      "onModalClose": [Function],
-      "onPrimaryButtonClick": [Function],
-      "primaryButtonLabel": "",
-      "title": "",
-    },
+    "modalID": undefined,
+    "modalOpenState": "CLOSE",
+    "onModalClose": undefined,
     "openModal": [Function],
-    "openState": "CLOSE",
   },
 }
 `;
 
 exports[`Modal slice should return modal state on modal data set using openModal 1`] = `
 {
-  "message": "message",
+  "closeModal": [Function],
+  "modalID": "search",
+  "modalOpenState": "OPEN",
   "onModalClose": [MockFunction],
-  "onPrimaryButtonClick": [MockFunction],
-  "primaryButtonLabel": "primaryButtonLabel",
-  "title": "title",
+  "openModal": [Function],
 }
 `;
 
 exports[`Modal slice should return modal state with initial value 1`] = `
 {
-  "message": "",
-  "onModalClose": [Function],
-  "onPrimaryButtonClick": [Function],
-  "primaryButtonLabel": "",
-  "title": "",
+  "closeModal": [Function],
+  "modalID": undefined,
+  "modalOpenState": "CLOSE",
+  "onModalClose": undefined,
+  "openModal": [Function],
 }
 `;
