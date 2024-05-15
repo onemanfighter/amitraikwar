@@ -6,7 +6,6 @@ import {
   useColorMode,
 } from '@chakra-ui/react';
 import { SearchIcon } from '@assets';
-import Fuse from 'fuse.js';
 import { useEffect, useState } from 'react';
 import { fuse } from '@providers';
 
@@ -38,39 +37,40 @@ const SearchModal = () => {
           onChange={handleSearch}
         />
       </InputGroup>
-
-      <Box
-        maxHeight={400}
-        overflowY="auto"
-        border="1px"
-        borderRadius={4}
-        boxShadow="md"
-      >
-        {searchResults.map((result, index) => (
-          <Box
-            key={index}
-            padding={2}
-            _hover={{
-              bgGradient:
-                colorMode === 'light'
-                  ? 'linear(to-r, green.200, blue.500)'
-                  : 'linear(to-r, green.800, blue.900)',
-              cursor: 'pointer',
-            }}
-            _active={{
-              bgGradient:
-                colorMode === 'light'
-                  ? 'linear(to-r, green.200, blue.500)'
-                  : 'linear(to-r, green.700, blue.800)',
-            }}
-            onClick={() => {
-              console.log(result.item);
-            }}
-          >
-            {result.item.title}
-          </Box>
-        ))}
-      </Box>
+      {searchResults.length !== 0 && (
+        <Box
+          maxHeight={400}
+          overflowY="auto"
+          border="1px"
+          borderRadius={4}
+          boxShadow="md"
+        >
+          {searchResults.map((result, index) => (
+            <Box
+              key={index}
+              padding={2}
+              _hover={{
+                bgGradient:
+                  colorMode === 'light'
+                    ? 'linear(to-r, green.200, blue.500)'
+                    : 'linear(to-r, green.800, blue.900)',
+                cursor: 'pointer',
+              }}
+              _active={{
+                bgGradient:
+                  colorMode === 'light'
+                    ? 'linear(to-r, green.200, blue.500)'
+                    : 'linear(to-r, green.700, blue.800)',
+              }}
+              onClick={() => {
+                console.log(result.item);
+              }}
+            >
+              {result.item.title}
+            </Box>
+          ))}
+        </Box>
+      )}
     </Box>
   );
 };
