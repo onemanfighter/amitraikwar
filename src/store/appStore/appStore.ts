@@ -2,10 +2,10 @@ import { create } from 'zustand';
 
 import { immer } from 'zustand/middleware/immer';
 import { AppStoreState } from './types';
-import { createThemeSlice } from '../slice/Theme';
+import { createModalSlice } from '../slice/Modal';
 
 export const appStore = create<AppStoreState>()(
   immer((...api) => ({
-    Theme: createThemeSlice(...api),
+    Modal: createModalSlice(...api),
   })),
 );

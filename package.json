@@ -16,6 +16,7 @@
     "@types/react": "^18.2.69",
     "@types/react-dom": "^18.2.22",
     "framer-motion": "^11.1.9",
+    "fuse.js": "^7.0.0",
     "i18next": "^23.11.2",
     "i18next-browser-languagedetector": "^7.2.1",
     "immer": "^10.0.4",

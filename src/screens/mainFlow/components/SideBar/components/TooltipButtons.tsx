@@ -6,15 +6,27 @@ import {
   Box,
   Button,
 } from '@chakra-ui/react';
+import { modalSelector, useShallow } from '@selectors';
+import { ModalIDs, ModalOpenState, appStore } from '@store';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const TooltipButtons = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const [threeDState, setThreeDState] = useState(false);
+  const { openModal, closeModal } = appStore(useShallow(modalSelector));
   const { t } = useTranslation();
+
+  const onSearch = () => {
+    console.log('Search button clicked with text');
+  };
+
   const onSearchClick = () => {
-    console.log('Search button clicked');
+    openModal({
+      modalOpenState: ModalOpenState.OPEN,
+      modalID: ModalIDs.SEARCH,
+      onModalClose: closeModal,
+    });
   };
   const onDownloadCVClick = () => {
     console.log('Download CV button clicked');

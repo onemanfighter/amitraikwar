@@ -5,6 +5,7 @@
       "@assets": ["src/assets"],
       "@assets/*": ["src/assets/*"],
       "@components": ["src/components"],
+      "@data": ["src/data"],
       "@localization": ["src/localization"],
       "@providers": ["src/providers"],
       "@router": ["src/router"],
