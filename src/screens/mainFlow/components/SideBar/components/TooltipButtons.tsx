@@ -17,10 +17,6 @@ const TooltipButtons = () => {
   const { openModal, closeModal } = appStore(useShallow(modalSelector));
   const { t } = useTranslation();
 
-  const onSearch = () => {
-    console.log('Search button clicked with text');
-  };
-
   const onSearchClick = () => {
     openModal({
       modalOpenState: ModalOpenState.OPEN,
