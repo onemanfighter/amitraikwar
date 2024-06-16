@@ -17,10 +17,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src",
-    "cypress",
-    "cypress.config.ts",
-    "src/screens/mainFlow/Contact/Contact.tsx"
-  ]
+  "include": ["src", "cypress", "cypress.config.ts", "__mocks__"]
 }
