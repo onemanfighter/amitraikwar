@@ -14,49 +14,49 @@ exports[`NavigationBar should renders correctly 1`] = `
       class="css-y5kaw5"
     >
       <a
-        class="chakra-button css-sdryx9"
+        class="chakra-button css-1f9j196"
         href="/home"
       >
         Home
       </a>
       <a
-        class="chakra-button css-sdryx9"
+        class="chakra-button css-1f9j196"
         href="/about"
       >
         About
       </a>
       <a
-        class="chakra-button css-sdryx9"
+        class="chakra-button css-1f9j196"
         href="/experience"
       >
         Experience
       </a>
       <a
-        class="chakra-button css-sdryx9"
+        class="chakra-button css-1f9j196"
         href="/projects"
       >
         Projects
       </a>
       <a
-        class="chakra-button css-sdryx9"
+        class="chakra-button css-1f9j196"
         href="/skills"
       >
         Skills
       </a>
       <a
-        class="chakra-button css-sdryx9"
+        class="chakra-button css-1f9j196"
         href="/resume"
       >
         Resume
       </a>
       <a
-        class="chakra-button css-sdryx9"
+        class="chakra-button css-1f9j196"
         href="/blogs"
       >
         Blogs
       </a>
       <a
-        class="chakra-button css-sdryx9"
+        class="chakra-button css-1f9j196"
         href="/contact"
       >
         Contact

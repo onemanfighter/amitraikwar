@@ -8,7 +8,7 @@ exports[`Content renders correctly 1`] = `
     !(function(){try{var a=function(c){var v="(prefers-color-scheme: dark)",h=window.matchMedia(v).matches?"dark":"light",r=c==="system"?h:c,o=document.documentElement,s=document.body,l="chakra-ui-light",d="chakra-ui-dark",i=r==="dark";return s.classList.add(i?d:l),s.classList.remove(i?l:d),o.style.colorScheme=r,o.dataset.theme=r,r},n=a,m="light",e="chakra-ui-color-mode",t=localStorage.getItem(e);t?a(t):localStorage.setItem(e,a(m))}catch(a){}})();
   </script>
   <div
-    class="css-i9axev"
+    class="css-1yspfdw"
   >
     <div
       class="css-12f1a2y"
@@ -35,7 +35,7 @@ exports[`Content renders correctly 1`] = `
       >
         <button
           aria-label="+91-8756366219"
-          class="chakra-button css-r1mtb4"
+          class="chakra-button css-1u36519"
           type="button"
         >
           <svg
@@ -74,7 +74,7 @@ exports[`Content renders correctly 1`] = `
       >
         <button
           aria-label="raikwar.amit.1603@gmail.com"
-          class="chakra-button css-r1mtb4"
+          class="chakra-button css-1u36519"
           type="button"
         >
           <svg
@@ -111,7 +111,7 @@ exports[`Content renders correctly 1`] = `
       >
         <button
           aria-label="Pune, India"
-          class="chakra-button css-r1mtb4"
+          class="chakra-button css-1u36519"
           type="button"
         >
           <svg
@@ -147,7 +147,7 @@ exports[`Content renders correctly 1`] = `
       >
         <button
           aria-label="16th March 1998"
-          class="chakra-button css-r1mtb4"
+          class="chakra-button css-1u36519"
           type="button"
         >
           <svg
@@ -191,7 +191,7 @@ exports[`Content renders correctly 1`] = `
     >
       <hr
         aria-orientation="horizontal"
-        class="chakra-divider css-svjswr"
+        class="chakra-divider css-14ww7qh"
       />
       <div
         class="css-jqz8zx"

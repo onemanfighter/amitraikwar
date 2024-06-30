@@ -1,4 +1,4 @@
-const AboutMe = [
+export const AboutMe = [
   {
     title: "Old Man's War",
     author: {
@@ -161,5 +161,3 @@ const AboutMe = [
     },
   },
 ];
-
-export default AboutMe;

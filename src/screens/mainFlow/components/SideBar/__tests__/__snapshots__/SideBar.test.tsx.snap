@@ -11,7 +11,7 @@ exports[`Side bar should renders correctly 1`] = `
     class="css-1bjuvht"
   >
     <a
-      class="chakra-button css-ik3kil"
+      class="chakra-button css-5b9f3c"
       href="/"
     >
       Amit Raikwar
@@ -20,14 +20,14 @@ exports[`Side bar should renders correctly 1`] = `
       class="css-xy3nmn"
     >
       <button
-        class="chakra-button css-bgkogr"
+        class="chakra-button css-1kepmvx"
         type="button"
       >
         Download CV
       </button>
       <button
         aria-label="3D toggle"
-        class="chakra-button css-ysx01z"
+        class="chakra-button css-1ok5q63"
         type="button"
       >
         <svg
@@ -47,7 +47,7 @@ exports[`Side bar should renders correctly 1`] = `
       </button>
       <button
         aria-label="Search"
-        class="chakra-button css-ysx01z"
+        class="chakra-button css-1ok5q63"
         type="button"
       >
         <svg
@@ -67,7 +67,7 @@ exports[`Side bar should renders correctly 1`] = `
       </button>
       <button
         aria-label="Toggle dark mode"
-        class="chakra-button css-ysx01z"
+        class="chakra-button css-1ok5q63"
         type="button"
       >
         <svg
@@ -87,7 +87,7 @@ exports[`Side bar should renders correctly 1`] = `
       </button>
     </div>
     <div
-      class="css-i9axev"
+      class="css-1yspfdw"
     >
       <div
         class="css-12f1a2y"
@@ -114,7 +114,7 @@ exports[`Side bar should renders correctly 1`] = `
         >
           <button
             aria-label="+91-8756366219"
-            class="chakra-button css-r1mtb4"
+            class="chakra-button css-1u36519"
             type="button"
           >
             <svg
@@ -153,7 +153,7 @@ exports[`Side bar should renders correctly 1`] = `
         >
           <button
             aria-label="raikwar.amit.1603@gmail.com"
-            class="chakra-button css-r1mtb4"
+            class="chakra-button css-1u36519"
             type="button"
           >
             <svg
@@ -190,7 +190,7 @@ exports[`Side bar should renders correctly 1`] = `
         >
           <button
             aria-label="Pune, India"
-            class="chakra-button css-r1mtb4"
+            class="chakra-button css-1u36519"
             type="button"
           >
             <svg
@@ -226,7 +226,7 @@ exports[`Side bar should renders correctly 1`] = `
         >
           <button
             aria-label="16th March 1998"
-            class="chakra-button css-r1mtb4"
+            class="chakra-button css-1u36519"
             type="button"
           >
             <svg
@@ -270,7 +270,7 @@ exports[`Side bar should renders correctly 1`] = `
       >
         <hr
           aria-orientation="horizontal"
-          class="chakra-divider css-svjswr"
+          class="chakra-divider css-14ww7qh"
         />
         <div
           class="css-jqz8zx"
