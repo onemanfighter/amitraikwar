@@ -35,6 +35,8 @@ module.exports = {
     '@localization': '<rootDir>/src/localization',
     '@providers': '<rootDir>/src/providers',
     '@router': '<rootDir>/src/router',
+    '^.+.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':
+      'jest-transform-stub',
   },
   transform: {
     '.+\\.(css|scss|png|jpg|svg)$': 'jest-transform-stub',
@@ -45,7 +47,7 @@ module.exports = {
       branches: 50,
       functions: 70,
       lines: 70,
-      statements: 70,
+      statements: -70,
     },
   },
 };

@@ -1,14 +1,14 @@
 {
-  "name": "AmitRaikwarPortfolio",
+  "name": "amitraikwar-portfolio",
   "version": "0.1.0",
   "description": "Amit Raikwar Portfolio website",
   "main": "index.tsx",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "jest --config jest.config.js",
-    "test:cov": "jest --config jest.config.js --coverage ",
-    "test:craco": "craco test --silent --watchAll=false",
+    "test": "TZ=UTC jest --config jest.config.js",
+    "test:cov": "TZ=UTC jest --config jest.config.js --coverage ",
+    "test:craco": "TZ=UTC craco test --silent --watchAll=false",
     "prettier:write": "prettier --write .",
     "prettier:check": "prettier --check .",
     "prettier:staged": "prettier --write .",

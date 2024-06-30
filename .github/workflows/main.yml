@@ -4,15 +4,14 @@ on:
   push:
     branches: ['development']
   pull_request:
-    branches: ['development']
+    branches: ['development', 'production']
 
 jobs:
   build_test_lint:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -24,4 +23,8 @@ jobs:
       - name: Linting
         run: yarn lint
       - name: Test
-        run: yarn test
+        run: yarn test:cov
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

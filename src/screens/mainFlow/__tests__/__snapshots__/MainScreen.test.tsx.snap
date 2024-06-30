@@ -17,7 +17,7 @@ exports[`MainScreen should render correctly 1`] = `
         class="css-1bjuvht"
       >
         <a
-          class="chakra-button css-ik3kil"
+          class="chakra-button css-5b9f3c"
           href="/"
         >
           Amit Raikwar
@@ -26,14 +26,14 @@ exports[`MainScreen should render correctly 1`] = `
           class="css-xy3nmn"
         >
           <button
-            class="chakra-button css-bgkogr"
+            class="chakra-button css-1kepmvx"
             type="button"
           >
             Download CV
           </button>
           <button
             aria-label="3D toggle"
-            class="chakra-button css-ysx01z"
+            class="chakra-button css-1ok5q63"
             type="button"
           >
             <svg
@@ -53,7 +53,7 @@ exports[`MainScreen should render correctly 1`] = `
           </button>
           <button
             aria-label="Search"
-            class="chakra-button css-ysx01z"
+            class="chakra-button css-1ok5q63"
             type="button"
           >
             <svg
@@ -73,7 +73,7 @@ exports[`MainScreen should render correctly 1`] = `
           </button>
           <button
             aria-label="Toggle dark mode"
-            class="chakra-button css-ysx01z"
+            class="chakra-button css-1ok5q63"
             type="button"
           >
             <svg
@@ -93,7 +93,7 @@ exports[`MainScreen should render correctly 1`] = `
           </button>
         </div>
         <div
-          class="css-i9axev"
+          class="css-1yspfdw"
         >
           <div
             class="css-12f1a2y"
@@ -120,7 +120,7 @@ exports[`MainScreen should render correctly 1`] = `
             >
               <button
                 aria-label="+91-8756366219"
-                class="chakra-button css-r1mtb4"
+                class="chakra-button css-1u36519"
                 type="button"
               >
                 <svg
@@ -159,7 +159,7 @@ exports[`MainScreen should render correctly 1`] = `
             >
               <button
                 aria-label="raikwar.amit.1603@gmail.com"
-                class="chakra-button css-r1mtb4"
+                class="chakra-button css-1u36519"
                 type="button"
               >
                 <svg
@@ -196,7 +196,7 @@ exports[`MainScreen should render correctly 1`] = `
             >
               <button
                 aria-label="Pune, India"
-                class="chakra-button css-r1mtb4"
+                class="chakra-button css-1u36519"
                 type="button"
               >
                 <svg
@@ -232,7 +232,7 @@ exports[`MainScreen should render correctly 1`] = `
             >
               <button
                 aria-label="16th March 1998"
-                class="chakra-button css-r1mtb4"
+                class="chakra-button css-1u36519"
                 type="button"
               >
                 <svg
@@ -276,7 +276,7 @@ exports[`MainScreen should render correctly 1`] = `
           >
             <hr
               aria-orientation="horizontal"
-              class="chakra-divider css-svjswr"
+              class="chakra-divider css-14ww7qh"
             />
             <div
               class="css-jqz8zx"
@@ -329,49 +329,49 @@ exports[`MainScreen should render correctly 1`] = `
           class="css-y5kaw5"
         >
           <a
-            class="chakra-button css-sdryx9"
+            class="chakra-button css-1f9j196"
             href="/home"
           >
             Home
           </a>
           <a
-            class="chakra-button css-sdryx9"
+            class="chakra-button css-1f9j196"
             href="/about"
           >
             About
           </a>
           <a
-            class="chakra-button css-sdryx9"
+            class="chakra-button css-1f9j196"
             href="/experience"
           >
             Experience
           </a>
           <a
-            class="chakra-button css-sdryx9"
+            class="chakra-button css-1f9j196"
             href="/projects"
           >
             Projects
           </a>
           <a
-            class="chakra-button css-sdryx9"
+            class="chakra-button css-1f9j196"
             href="/skills"
           >
             Skills
           </a>
           <a
-            class="chakra-button css-sdryx9"
+            class="chakra-button css-1f9j196"
             href="/resume"
           >
             Resume
           </a>
           <a
-            class="chakra-button css-sdryx9"
+            class="chakra-button css-1f9j196"
             href="/blogs"
           >
             Blogs
           </a>
           <a
-            class="chakra-button css-sdryx9"
+            class="chakra-button css-1f9j196"
             href="/contact"
           >
             Contact
