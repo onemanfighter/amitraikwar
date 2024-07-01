@@ -310,6 +310,11 @@ exports[`Side bar should renders correctly 1`] = `
           </div>
         </div>
       </div>
+      <p
+        class="chakra-text css-1l4w6pd"
+      >
+        Version: 0.1.0
+      </p>
     </div>
   </div>
   <span

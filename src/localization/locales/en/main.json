@@ -27,7 +27,8 @@
         "birthdayHeader": "Birthday",
         "birthday": "16th March 1998"
       },
-      "post": "Software Engineer 3 @ RSLabs"
+      "post": "Software Engineer 3 @ RSLabs",
+      "version": "Version: "
     }
   },
   "HomeScreen": {
