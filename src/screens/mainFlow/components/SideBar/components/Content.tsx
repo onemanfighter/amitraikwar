@@ -1,13 +1,10 @@
 import {
   AbsoluteCenter,
   Box,
-  Button,
   Divider,
   IconButton,
   Img,
   Text,
-  Tr,
-  VStack,
   useColorMode,
 } from '@chakra-ui/react';
 import { TypeWriterText } from '@components';
@@ -15,6 +12,7 @@ import { CardProps } from './types';
 import { useTranslation } from 'react-i18next';
 import SocialButtons from './SocialButtons';
 import { BirthdayIcon, EmailIcon, LocationIcon, PhoneIcon } from '@assets';
+import packageJson from '../../../../../../package.json';
 
 const Icons = ({ icon }: { icon: string }) => {
   switch (icon) {
@@ -177,6 +175,9 @@ const Content = () => {
         </AbsoluteCenter>
       </Box>
       <SocialButtons />
+      <Text display={'flex'} justifyContent={'center'}>
+        {t('MainHomeScreen.sidebar.version') + packageJson.version}
+      </Text>
     </Box>
   );
 };
