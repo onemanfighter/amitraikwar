@@ -99,7 +99,7 @@ exports[`MainScreen should render correctly 1`] = `
             class="css-12f1a2y"
           >
             <img
-              class="chakra-image css-1hke5j3"
+              class="chakra-image css-10ttzh9"
               loading="lazy"
               src=""
             />
@@ -325,7 +325,7 @@ exports[`MainScreen should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="css-kkov4f"
+      class="css-1k1znqf"
     >
       <div
         class="css-zz8ks3"

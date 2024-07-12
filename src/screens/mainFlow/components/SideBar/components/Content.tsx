@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 import SocialButtons from './SocialButtons';
 import { BirthdayIcon, EmailIcon, LocationIcon, PhoneIcon } from '@assets';
 import packageJson from '../../../../../../package.json';
+import Profile from '@assets/images/AmitRaikwar.png';
 
 const Icons = ({ icon }: { icon: string }) => {
   switch (icon) {
@@ -86,7 +87,14 @@ const Content = () => {
         borderRadius={'10'}
         boxShadow={'lg'}
       >
-        <Img src={''} loading="lazy" borderRadius={10} padding={4} />
+        <Img
+          boxSize={'250'}
+          src={Profile}
+          loading="lazy"
+          borderRadius={10}
+          dropShadow={'lg'}
+          border={'1px solid gray'}
+        />
       </Box>
       <Box
         display={'flex'}

@@ -18,7 +18,7 @@ const MainScreen = () => {
       <GridItem colSpan={2}>
         <SideBar />
       </GridItem>
-      <GridItem colSpan={5} scrollBehavior={'auto'}>
+      <GridItem colSpan={5} scrollBehavior={'auto'} marginTop={16}>
         <NavigationBar />
         <Box
           borderRadius={'lg'}
