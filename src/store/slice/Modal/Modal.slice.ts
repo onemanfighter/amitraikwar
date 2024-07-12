@@ -1,5 +1,5 @@
 import { AppStoreSlice } from '../../appStore/types';
-import { ModalState, ModalStateSlice, ModalOpenState, ModalIDs } from './types';
+import { ModalState, ModalStateSlice, ModalOpenState } from './types';
 
 const initialAlertState: ModalState = {
   modalID: undefined,

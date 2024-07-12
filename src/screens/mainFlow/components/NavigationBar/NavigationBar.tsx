@@ -1,14 +1,15 @@
-import { Box, Button, useColorMode } from '@chakra-ui/react';
+import { Box, Button } from '@chakra-ui/react';
 import { NavigationBarProps } from './types';
 import { NavigationButtons } from './constants';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useColorSelector } from '@components';
 
 const NavigationBar = (props: NavigationBarProps) => {
   const { t } = useTranslation();
   const location = useLocation();
 
-  const { colorMode } = useColorMode();
+  const { gradient } = useColorSelector();
 
   return (
     <Box
@@ -20,11 +21,7 @@ const NavigationBar = (props: NavigationBarProps) => {
     >
       <Box
         display={'flex'}
-        bgGradient={
-          colorMode === 'light'
-            ? 'linear(to-r, green.300, blue.500)'
-            : 'linear(to-r, green.800, blue.900)'
-        }
+        bgGradient={gradient.topAppBar}
         padding={'6'}
         flexDirection={'row'}
         justifyContent={'center'}

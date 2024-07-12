@@ -17,7 +17,7 @@ exports[`MainScreen should render correctly 1`] = `
         class="css-1bjuvht"
       >
         <a
-          class="chakra-button css-5b9f3c"
+          class="chakra-button css-1ozkr8m"
           href="/"
         >
           Amit Raikwar
@@ -279,7 +279,7 @@ exports[`MainScreen should render correctly 1`] = `
               class="chakra-divider css-14ww7qh"
             />
             <div
-              class="css-jqz8zx"
+              class="css-1roiji1"
             >
               Social links
             </div>

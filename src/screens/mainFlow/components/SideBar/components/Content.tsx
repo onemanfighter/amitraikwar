@@ -5,9 +5,8 @@ import {
   IconButton,
   Img,
   Text,
-  useColorMode,
 } from '@chakra-ui/react';
-import { TypeWriterText } from '@components';
+import { TypeWriterText, useColorSelector } from '@components';
 import { CardProps } from './types';
 import { useTranslation } from 'react-i18next';
 import SocialButtons from './SocialButtons';
@@ -31,7 +30,7 @@ const Icons = ({ icon }: { icon: string }) => {
 };
 
 const Card = ({ title, heading, icon }: CardProps) => {
-  const { colorMode } = useColorMode();
+  const { bg, icon: iconColor } = useColorSelector();
 
   return (
     <Box
@@ -41,12 +40,12 @@ const Card = ({ title, heading, icon }: CardProps) => {
       display={'flex'}
       flexDirection={'row'}
       justifyContent={'flex-start'}
-      bg={colorMode === 'light' ? 'green.200' : 'green.700'}
+      bg={bg.container}
     >
       <IconButton
         variant={'outline'}
-        bg={'white'}
-        color={colorMode === 'light' ? 'green.400' : 'green.700'}
+        bg={iconColor.primary.bg}
+        color={iconColor.primary.color}
         aria-label={title}
         icon={<Icons icon={icon} />}
       />
@@ -62,25 +61,22 @@ const Card = ({ title, heading, icon }: CardProps) => {
 
 const Content = () => {
   const { t } = useTranslation();
-  const { colorMode } = useColorMode();
+  const { bg, gradient } = useColorSelector();
+
   return (
     <Box
       flex={1}
       flexDirection={'column'}
       justifyContent={'flex-start'}
       borderRadius={'lg'}
-      bgGradient={
-        colorMode === 'light'
-          ? 'linear(to-br, green.300, blue.500)'
-          : 'linear(to-br, green.800, blue.900)'
-      }
+      bgGradient={gradient.sideBarBG}
       marginX={'4'}
       marginTop={'40'}
       dropShadow={'lg'}
     >
       <Box
         boxSize={'250'}
-        bg={colorMode === 'light' ? 'green.200' : 'green.700'}
+        bg={bg.container}
         position={'relative'}
         top={'-125'}
         marginX={'auto'}
@@ -101,7 +97,7 @@ const Content = () => {
         flexDirection={'column'}
         padding={'4'}
         borderRadius={'lg'}
-        bg={colorMode === 'light' ? 'green.200' : 'green.700'}
+        bg={bg.container}
         boxShadow={'lg'}
         margin={'4'}
         position={'relative'}
@@ -132,7 +128,7 @@ const Content = () => {
         padding={'4'}
         gap={'4'}
         borderRadius={'lg'}
-        bg={colorMode === 'light' ? 'green.200' : 'green.700'}
+        bg={bg.container}
         boxShadow={'xl'}
         margin={'4'}
         position={'relative'}
@@ -166,7 +162,7 @@ const Content = () => {
         marginX={'4'}
         padding={'2'}
         justifyContent={'center'}
-        bg={colorMode === 'light' ? 'green.200' : 'green.700'}
+        bg={bg.container}
       >
         <Text fontSize={'lg'} fontWeight={'bold'}>
           {t('MainHomeScreen.sidebar.post')}
@@ -174,11 +170,7 @@ const Content = () => {
       </Box>
       <Box position="relative" padding="10" top={-5}>
         <Divider />
-        <AbsoluteCenter
-          bgColor={colorMode === 'light' ? 'green.200' : 'green.700'}
-          borderRadius={'lg'}
-          px={4}
-        >
+        <AbsoluteCenter bg={bg.container} borderRadius={'lg'} px={4}>
           Social links
         </AbsoluteCenter>
       </Box>
