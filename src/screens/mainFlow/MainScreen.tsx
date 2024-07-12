@@ -1,12 +1,8 @@
-import { Box, Grid, GridItem, HStack, Stack, Text } from '@chakra-ui/react';
-import { TypeWriterText } from '@components';
-import { useTranslation } from 'react-i18next';
+import { Box, Grid, GridItem } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
 import { SideBar, NavigationBar } from './components';
 
 const MainScreen = () => {
-  const { t } = useTranslation();
-
   return (
     <Grid
       maxWidth={'8xl'}

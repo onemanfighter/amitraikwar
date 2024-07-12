@@ -1,11 +1,10 @@
 import { Box, Img, Text, useColorMode } from '@chakra-ui/react';
-import { TypeWriterText } from '@components';
-import { color } from 'framer-motion';
+import { TypeWriterText, useColorSelector } from '@components';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const { t } = useTranslation();
-  const { colorMode } = useColorMode();
+  const { text, gradient } = useColorSelector();
 
   return (
     <Box
@@ -25,7 +24,7 @@ const Home = () => {
           <Text
             fontSize="3xl"
             fontWeight="bold"
-            bgGradient={'linear(to-b, green.500, blue.500)'}
+            bgGradient={text.Hero}
             bgClip={'text'}
             fontFamily={'monospace'}
           >
@@ -35,7 +34,7 @@ const Home = () => {
           <Text
             fontSize="6xl"
             fontWeight="bold"
-            bgGradient={'linear(to-b, green.500, blue.500)'}
+            bgGradient={text.Hero}
             bgClip={'text'}
             fontFamily={'monospace'}
           >
@@ -81,11 +80,7 @@ const Home = () => {
         flexDirection="column"
         justifyContent="center"
         marginTop={5}
-        bgGradient={
-          colorMode === 'light'
-            ? 'linear(to-r, green.200, blue.400)'
-            : 'linear(to-r, green.800, blue.900)'
-        }
+        bgGradient={gradient.contentBG}
         boxShadow={'lg'}
         padding={'4'}
         borderRadius={'lg'}
@@ -101,11 +96,7 @@ const Home = () => {
         flexDirection="column"
         justifyContent="center"
         marginTop={5}
-        bgGradient={
-          colorMode === 'light'
-            ? 'linear(to-r, green.200, blue.400)'
-            : 'linear(to-r, green.800, blue.900)'
-        }
+        bgGradient={gradient.contentBG}
         boxShadow={'lg'}
         padding={'4'}
         borderRadius={'lg'}

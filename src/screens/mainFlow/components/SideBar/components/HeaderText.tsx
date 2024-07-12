@@ -1,16 +1,18 @@
 import { Button } from '@chakra-ui/react';
+import { useColorSelector } from '@components';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const HeaderText = () => {
   const { t } = useTranslation();
+  const { text } = useColorSelector();
 
   return (
     <Button
       fontSize={'2xl'}
       as={Link}
       to={'/'}
-      bgGradient={'linear(to-r, green.500, blue.500)'}
+      bgGradient={text.Hero}
       bgClip={'text'}
       fontWeight={'800'}
       fontFamily={'monospace'}
