@@ -135,11 +135,6 @@ const Content = () => {
         top={'-90'}
       >
         <Card
-          title={t('MainHomeScreen.sidebar.details.phone')}
-          heading={t('MainHomeScreen.sidebar.details.phoneHeader')}
-          icon={'phone'}
-        />
-        <Card
           title={t('MainHomeScreen.sidebar.details.email')}
           heading={t('MainHomeScreen.sidebar.details.emailHeader')}
           icon={'email'}
@@ -148,11 +143,6 @@ const Content = () => {
           title={t('MainHomeScreen.sidebar.details.location')}
           heading={t('MainHomeScreen.sidebar.details.locationHeader')}
           icon={'location'}
-        />
-        <Card
-          title={t('MainHomeScreen.sidebar.details.birthday')}
-          heading={t('MainHomeScreen.sidebar.details.birthdayHeader')}
-          icon={'birthday'}
         />
       </Box>
       <Box

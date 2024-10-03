@@ -18,14 +18,10 @@
     "sidebar": {
       "downloadCV": "Download CV",
       "details": {
-        "phoneHeader": "Phone",
-        "phone": "+91-8756366219",
         "emailHeader": "Email",
         "email": "raikwar.amit.1603@gmail.com",
         "locationHeader": "Location",
-        "location": "Pune, India",
-        "birthdayHeader": "Birthday",
-        "birthday": "16th March 1998"
+        "location": "India"
       },
       "post": "Software Engineer 3 @ RSLabs",
       "version": "Version: "
