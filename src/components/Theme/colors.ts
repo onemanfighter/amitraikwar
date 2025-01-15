@@ -1,5 +1,13 @@
 const colors = {
   transparent: 'transparent',
+  primary: '#F1F2F3',
+  secondary: '#00D8FF',
+  success: '#31CE7B',
+  danger: '#D82727',
+  warning: '#D79D28',
+  info: '#00D8FF',
+  light: '#F1F2F3',
+  dark: '#17191C',
   black: '#000',
   white: '#fff',
   gray: {

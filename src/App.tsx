@@ -4,14 +4,17 @@ import {
   LocalizationProvider,
   ThemeProvider,
 } from '@providers';
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
   return (
     <ThemeProvider>
       <React.StrictMode>
-        <LocalizationProvider>
-          <AppRouterProvider />
-        </LocalizationProvider>
+        <HelmetProvider>
+          <LocalizationProvider>
+            <AppRouterProvider />
+          </LocalizationProvider>
+        </HelmetProvider>
       </React.StrictMode>
     </ThemeProvider>
   );
