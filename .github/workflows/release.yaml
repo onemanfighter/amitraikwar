@@ -1,8 +1,7 @@
 name: Releases
+
 on:
-  push:
-    branches:
-      - production
+  workflow_dispatch:
 
 permissions:
   contents: write
