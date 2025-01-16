@@ -23,6 +23,7 @@
     "cypress.config.ts",
     "__mocks__",
     "src/screens/mainFlow/Contact/Contact.tsx",
-    "src/screens/mainFlow/scene/AdamHead.tsx"
-, "src/screens/mainFlow/scene/LieutenantHead.jsx"  ]
+    "src/screens/mainFlow/scene/AdamHead.tsx",
+    "src/screens/mainFlow/scene/LieutenantHead.jsx"
+  ]
 }
