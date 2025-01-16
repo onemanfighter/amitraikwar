@@ -1,1 +1,2 @@
-export { default as FollowingCursor } from './Cursor';
+export { default as CursorProvider } from './CursorProvider';
+export { useCursor } from './CursorProvider';

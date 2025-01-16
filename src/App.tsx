@@ -5,15 +5,18 @@ import {
   ThemeProvider,
 } from '@providers';
 import { HelmetProvider } from 'react-helmet-async';
+import { CursorProvider } from '@components';
 
 function App() {
   return (
     <ThemeProvider>
       <React.StrictMode>
         <HelmetProvider>
-          <LocalizationProvider>
-            <AppRouterProvider />
-          </LocalizationProvider>
+          <CursorProvider>
+            <LocalizationProvider>
+              <AppRouterProvider />
+            </LocalizationProvider>
+          </CursorProvider>
         </HelmetProvider>
       </React.StrictMode>
     </ThemeProvider>

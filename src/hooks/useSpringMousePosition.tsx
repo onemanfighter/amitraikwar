@@ -15,8 +15,8 @@ const useSpringMousePosition = (ref: RefObject<HTMLDivElement | null>) => {
       const element = ref.current!;
 
       frame.read(() => {
-        xPoint.set(clientX - element.offsetLeft - element.offsetWidth / 2);
-        yPoint.set(clientY - element.offsetTop - element.offsetHeight / 2);
+        xPoint.set(clientX - element.offsetLeft - 56 / 2);
+        yPoint.set(clientY - element.offsetTop - 56 / 2);
       });
     };
 

@@ -1,5 +1,6 @@
 import { Text } from '@chakra-ui/react';
-import { FollowingCursor, TitleBoxContainer } from '@components';
+import { TitleBoxContainer, Lights } from '@components';
+import { NavigationBar } from './components';
 
 const MainScreen = () => {
   return (
@@ -7,9 +8,11 @@ const MainScreen = () => {
       title={'Amit Raikwar | Portfolio'}
       bg={'black'}
       minHeight={'100vh'}
+      minW={'100vw'}
       display={'flex'}
     >
-      <FollowingCursor />
+      <Lights />
+      <NavigationBar />
       <Text
         fontSize={'4xl'}
         color={'white'}
