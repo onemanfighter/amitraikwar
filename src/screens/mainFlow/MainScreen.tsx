@@ -1,8 +1,13 @@
 import { Text } from '@chakra-ui/react';
 import { TitleBoxContainer, Lights } from '@components';
 import { NavigationBar, SocialNavigation } from './components';
+import { RobotScene } from './scene';
+import { useState } from 'react';
 
 const MainScreen = () => {
+  const [characterType, setCharacterType] = useState<'adam' | 'lieutenant'>(
+    'lieutenant',
+  );
   return (
     <TitleBoxContainer
       title={'Amit Raikwar | Portfolio'}
@@ -11,19 +16,14 @@ const MainScreen = () => {
       minW={'100vw'}
       display={'flex'}
     >
+      <RobotScene type={characterType} />
       <Lights />
-      <NavigationBar />
+      <NavigationBar
+        handleCharacterClick={(type: 'adam' | 'lieutenant') => {
+          setCharacterType(type);
+        }}
+      />
       <SocialNavigation />
-      <Text
-        fontSize={'4xl'}
-        color={'white'}
-        position={'absolute'}
-        top={'50%'}
-        left={'50%'}
-        transform={'translate(-50%, -50%)'}
-      >
-        AMIT Raikwar
-      </Text>
     </TitleBoxContainer>
   );
 };

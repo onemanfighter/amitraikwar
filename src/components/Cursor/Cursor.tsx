@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useSpringMousePosition } from '../../hooks';
 import { useCursor } from './CursorProvider';
 
@@ -22,6 +22,12 @@ const FollowCursor = () => {
     transition: !insets ? 'all 0.0s ease' : 'all 0.5s ease',
     borderRadius: insets ? borderRadius ?? '5px' : '50%',
   };
+
+  useEffect(() => {
+    // Initial position
+
+    ref.current!.style.transform = `translate(${x}px, ${y}px)`;
+  }, [x, y, insets]);
 
   return (
     <motion.div

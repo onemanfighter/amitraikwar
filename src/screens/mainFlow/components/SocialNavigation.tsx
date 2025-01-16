@@ -43,7 +43,7 @@ const SocialNavigation = () => {
       ref={ref}
       position={'fixed'}
       bottom={20}
-      left={10}
+      right={10}
       px={2}
       py={5}
       border={'1px solid white'}
