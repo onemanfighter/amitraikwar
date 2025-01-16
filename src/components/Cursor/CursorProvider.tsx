@@ -9,6 +9,7 @@ export const CursorContext = createContext<{
         width: number;
         top: number;
         left: number;
+        borderRadius?: string;
       }
     | undefined;
   toggle: () => void;
@@ -19,6 +20,7 @@ export const CursorContext = createContext<{
           width: number;
           top: number;
           left: number;
+          borderRadius?: string;
         }
       | undefined,
   ) => void;
@@ -34,6 +36,7 @@ export const CursorContext = createContext<{
           width: number;
           top: number;
           left: number;
+          borderRadius?: string;
         }
       | undefined,
     // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -48,6 +51,7 @@ const CursorProvider = ({ children }: { children: React.ReactNode }) => {
         width: number;
         top: number;
         left: number;
+        borderRadius?: string;
       }
     | undefined
   >(undefined);

@@ -1,6 +1,6 @@
 import { Text } from '@chakra-ui/react';
 import { TitleBoxContainer, Lights } from '@components';
-import { NavigationBar } from './components';
+import { NavigationBar, SocialNavigation } from './components';
 
 const MainScreen = () => {
   return (
@@ -13,6 +13,7 @@ const MainScreen = () => {
     >
       <Lights />
       <NavigationBar />
+      <SocialNavigation />
       <Text
         fontSize={'4xl'}
         color={'white'}

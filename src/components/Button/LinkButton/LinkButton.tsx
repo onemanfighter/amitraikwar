@@ -27,7 +27,7 @@ const LinkButton = ({
       };
     setCursorInsets(undefined);
     setTimeout(() => {
-      setCursorInsets({ height, width, top, left });
+      setCursorInsets({ height, width, top, left, borderRadius: '5px' });
     }, 0);
     toggle();
     setIsHovered(true);

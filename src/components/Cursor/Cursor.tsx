@@ -8,18 +8,19 @@ const FollowCursor = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { x, y } = useSpringMousePosition(ref);
 
-  const { width, height, top, left } = insets ?? {
+  const { width, height, top, left, borderRadius } = insets ?? {
     width: 56,
     height: 56,
     top: 0,
     left: 0,
+    borderRadius: '5px',
   };
   const props = {
     boxShadow: '0 0 50px 10px violet',
     width: width,
     height: height,
     transition: !insets ? 'all 0.0s ease' : 'all 0.5s ease',
-    borderRadius: insets ? '5px' : '50%',
+    borderRadius: insets ? borderRadius ?? '5px' : '50%',
   };
 
   return (
