@@ -22,7 +22,7 @@ const Model = forwardRef((props, ref) => {
     }
   });
   return (
-    <group ref={ref} position={[0, -0.4, -1]}>
+    <group ref={ref} position={[0, -0.3, -3]}>
       <primitive object={scene} {...props} />
     </group>
   );
