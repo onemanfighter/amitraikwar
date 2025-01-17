@@ -17,7 +17,7 @@ const Model = forwardRef((props, ref) => {
       child.castShadow = true;
       child.receiveShadow = true;
       child.material.metalness = 0.7;
-      child.material.roughness = 0.2;
+      child.material.roughness = 0.5;
       child.material.envMapIntensity = 1;
     }
   });

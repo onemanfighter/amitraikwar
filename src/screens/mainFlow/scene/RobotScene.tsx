@@ -1,20 +1,18 @@
 /* eslint-disable react/no-unknown-property */
-import { Canvas, ThreeElements } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { lazy, Suspense, useEffect, useRef } from 'react';
 
 import {
   Environment,
   Html,
+  OrbitControls,
   ScrollControls,
   useProgress,
-  useScroll,
 } from '@react-three/drei';
 import { Box, Progress } from '@chakra-ui/react';
-import { useMousePositions, useSpringMousePosition } from '@hooks';
+import { useMousePositions } from '@hooks';
 import gsap from 'gsap';
-import { useAnimate } from 'framer-motion';
-import { has } from 'lodash';
-import { Mesh } from 'three';
+import { DirectionalLight, Mesh } from 'three';
 
 const LoaderComponent = () => {
   const { progress } = useProgress();
@@ -29,6 +27,7 @@ const LoaderComponent = () => {
 
 const AdamHead = lazy(() => import('./AdamHead'));
 const LieutenantHead = lazy(() => import('./LieutenantHead'));
+const IonDrive = lazy(() => import('./IonDrive'));
 
 const RobotScene = ({
   type = 'lieutenant',
@@ -47,8 +46,8 @@ const RobotScene = ({
     });
     if (!ref.current) return;
     tl.current.to(ref.current.rotation, {
-      y: x !== 0 ? x / 2500 - 0.25 : -0.25,
-      x: y !== 0 ? -y / 2500 - 0.2 : -0.2,
+      y: x !== 0 ? x / 5000 - 0.18 : -0.25,
+      x: y !== 0 ? -y / 5000 - 0.17 : -0.2,
       duration: 1.5,
     });
 
@@ -68,22 +67,24 @@ const RobotScene = ({
       dpr={[1, 2]}
       performance={{ min: 0.1, max: 1 }}
       camera={{
-        position: [0, -5, -20],
-        fov: 10,
+        position: [0, -3, -20],
+        fov: 12,
       }}
     >
       <ambientLight intensity={0.5} color={'violet'} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+      <directionalLight position={[0, 0, 1]} intensity={0.5} />
       <Suspense fallback={<LoaderComponent />}>
-        <ScrollControls pages={3} damping={10}>
-          {type === 'adam' ? (
-            <AdamHead ref={ref} />
-          ) : (
-            <LieutenantHead ref={ref} />
-          )}
-        </ScrollControls>
+        {type === 'adam' ? (
+          <AdamHead ref={ref} />
+        ) : (
+          <LieutenantHead ref={ref} />
+        )}
       </Suspense>
-      <Environment preset="dawn" blur={0.2} />
+      <Suspense>
+        <IonDrive />
+      </Suspense>
+      <Environment preset="city" blur={0.8} />
     </Canvas>
   );
 };
