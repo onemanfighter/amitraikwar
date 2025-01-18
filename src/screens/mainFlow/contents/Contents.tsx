@@ -18,7 +18,11 @@ const Contents = () => {
       bg={'black'}
       color={'white'}
     >
-      <CoverText text="Hello, I am " highlightedText="Amit Raikwar" />
+      <CoverText
+        text="Hello, I am "
+        highlightedText="Amit Raikwar"
+        role="Full Stack Developer"
+      />
       <WavyBackground
         style={{
           position: 'absolute',

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { lazy, Suspense, useEffect, useRef } from 'react';
+import { easing } from 'maath';
 
 import { Environment, Html, useProgress } from '@react-three/drei';
 import { Box, Progress } from '@chakra-ui/react';
@@ -8,6 +9,12 @@ import { useMousePositions } from '@hooks';
 import gsap from 'gsap';
 import { Mesh } from 'three';
 import { CharacterType } from '.';
+import {
+  Bloom,
+  DepthOfField,
+  EffectComposer,
+  SelectiveBloom,
+} from '@react-three/postprocessing';
 
 const LoaderComponent = () => {
   const { progress } = useProgress();
@@ -30,7 +37,6 @@ const RobotScene = ({ type = 'copernicus' }: { type: CharacterType }) => {
   const { x, y } = useMousePositions();
   const ref = useRef<Mesh | null>(null);
   const tl = useRef<gsap.core.Timeline>();
-
   useEffect(() => {
     tl.current = gsap.timeline({
       defaults: {
@@ -64,9 +70,13 @@ const RobotScene = ({ type = 'copernicus' }: { type: CharacterType }) => {
         fov: 20,
       }}
     >
-      <ambientLight intensity={0.5} color={'violet'} />
-      <directionalLight position={[2, 0, 2]} intensity={0.1} color={'violet'} />
-      <directionalLight position={[-4, 1, 4]} intensity={0.2} color={'blue'} />
+      <ambientLight intensity={0.9} color={'violet'} />
+      <directionalLight position={[2, 0, 2]} intensity={0.3} color={'violet'} />
+      <directionalLight
+        position={[-4, 1.5, 4]}
+        intensity={0.4}
+        color={'blue'}
+      />
       <Suspense fallback={<LoaderComponent />}>
         {type === 'adam' ? (
           <AdamHead ref={ref} />
@@ -76,9 +86,36 @@ const RobotScene = ({ type = 'copernicus' }: { type: CharacterType }) => {
           <LieutenantHead ref={ref} />
         )}
       </Suspense>
-      <Environment preset="city" blur={0.8} />
+      <Environment preset="night" blur={0.2} />
+      <EffectComposer>
+        <Bloom
+          luminanceThreshold={1}
+          mipmapBlur
+          luminanceSmoothing={0.2}
+          intensity={1}
+        />
+      </EffectComposer>
+      {/* <CameraRig /> */}
     </Canvas>
   );
 };
+
+// function CameraRig() {
+//   useFrame((state, delta) => {
+//     easing.damp3(
+//       state.camera.position,
+//       [
+//         -0 + (state.pointer.x * state.viewport.width) / 3,
+//         (3 + state.pointer.y) / 2,
+//         20,
+//       ],
+//       0.5,
+//       delta,
+//     );
+//     state.camera.lookAt(0, 0, 0);
+//   });
+
+//   return null;
+// }
 
 export default RobotScene;

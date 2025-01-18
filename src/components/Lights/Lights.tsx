@@ -4,7 +4,7 @@ const Lights = () => {
   return (
     <>
       <Box
-        position={'fixed'}
+        position={'absolute'}
         top={0}
         right={0}
         boxShadow={
@@ -12,8 +12,8 @@ const Lights = () => {
         }
       />
       <Box
-        position={'fixed'}
-        top={'30%'}
+        position={'absolute'}
+        top={'450px'}
         left={-10}
         boxShadow={
           '0 0 40px 10px violet, 0 0 100px 20px violet, 0 0 140px 30px violet, 0 0 200px 40px violet, 0 0 300px 60px violet'

@@ -19,3 +19,8 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(0, 0, 0);
 }
+
+::selection {
+  background-color: rgba(193, 129, 193, 0.576);
+  color: black; /* Optional: set text color within selection */
+}

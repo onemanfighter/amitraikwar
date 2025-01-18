@@ -56,7 +56,7 @@ const SocialNavigation = ({
     setCursorInsets(undefined);
   };
   return (
-    <VStack position={'fixed'} bottom={20} right={10} rowGap={10} zIndex={10}>
+    <VStack position={'fixed'} bottom={20} right={14} rowGap={10} zIndex={10}>
       <Box
         ref={menuButtonRef}
         onMouseEnter={onMouseEnter(menuButtonRef, '6px')}
@@ -67,8 +67,12 @@ const SocialNavigation = ({
             <IconButton
               variant={'outline'}
               borderColor={'gray'}
-              boxShadow={'0px 0px 20px 8px gray'}
+              boxShadow={'0px 0px 10px 3px gray'}
+              bg={'rgba(255, 255, 255, 0.1)'}
+              backdropFilter={'blur(20px)'}
+              transition={'background-color 0.3s'}
               aria-label="Options"
+              size={'lg'}
               icon={<RobotIcon height={'2em'} width={'2em'} />}
             />
           </MenuButton>
@@ -77,7 +81,7 @@ const SocialNavigation = ({
               backgroundColor: 'transparent',
               color: 'violet',
               padding: '0px',
-              boxShadow: '0px 0px 10px 8px gray',
+              boxShadow: '0px 0px 10px 4px gray',
             }}
           >
             {(['adam', 'lieutenant', 'copernicus'] as CharacterType[]).map(
@@ -98,10 +102,13 @@ const SocialNavigation = ({
         px={2}
         py={5}
         border={'1px solid gray'}
-        boxShadow={'0px 0px 20px 8px gray'}
+        boxShadow={'0px 0px 10px 4px gray'}
         borderRadius={'30px'}
         onMouseEnter={onMouseEnter(ref, '30px')}
         onMouseLeave={onMouseLeave}
+        bg={'rgba(255, 255, 255, 0.1)'}
+        backdropFilter={'blur(20px)'}
+        transition={'background-color 0.3s'}
       >
         <IconButton aria-label="" icon={<GithubIcon />} {...IconProps} />
         <IconButton icon={<LinkedInIcon />} aria-label="" {...IconProps} />

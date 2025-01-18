@@ -3,7 +3,6 @@ import { LinkButtonProps } from './types';
 import { ArrowIcon } from '@assets';
 import { useCursor } from '../../Cursor';
 import { useRef, useState } from 'react';
-import { useMousePositions } from '@hooks';
 
 const LinkButton = ({
   text,
@@ -41,7 +40,7 @@ const LinkButton = ({
 
   const translationProps = isHovered
     ? {
-        transform: 'translateY(15px)',
+        transform: 'translateY(12px)',
         transition: 'transform 0.2s',
       }
     : {
@@ -59,6 +58,7 @@ const LinkButton = ({
       color={'white'}
       colorScheme="violet"
       fontSize={fontSize}
+      fontWeight={'300'}
       borderRadius={0}
       overflow={'clip'}
       px={2}
