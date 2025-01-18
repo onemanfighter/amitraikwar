@@ -21,13 +21,13 @@ const MainScreen = () => {
     >
       <MeteorsEffect number={30} />
       <RobotScene type={characterType} />
-      <Lights />
-      <NavigationBar
+      {/* <Lights /> */}
+      <NavigationBar />
+      <SocialNavigation
         handleCharacterClick={(type: 'adam' | 'lieutenant') => {
           setCharacterType(type);
         }}
       />
-      <SocialNavigation />
       <Contents />
       <Footer />
     </TitleBoxContainer>

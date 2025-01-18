@@ -1,4 +1,5 @@
 import { Box, Text } from '@chakra-ui/react';
+import { HoverBorderGradient } from '@components';
 import { Link } from 'react-router-dom';
 
 const FooterEndText = () => (
@@ -14,17 +15,18 @@ const FooterEndText = () => (
 const Footer = () => {
   return (
     <Box
-      display={'flex'}
-      bottom={0}
+      display={'absolute'}
       flexDirection={'column'}
-      alignItems={'center'}
-      justifyContent={'center'}
       width={'100%'}
+      height={'220px'}
+      overflowY={'hidden'}
       p={2}
       bg={'black'}
       color={'white'}
     >
-      <FooterEndText />
+      <HoverBorderGradient>
+        <FooterEndText />
+      </HoverBorderGradient>
     </Box>
   );
 };

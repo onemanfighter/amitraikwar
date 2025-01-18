@@ -34,15 +34,6 @@ const Contents = () => {
           />
         </ThreeDPin>
       </HStack>
-      <HoverBorderGradient>
-        <Text fontSize={'md'}>
-          © {new Date().getFullYear()}{' '}
-          <a href={'https://amitraikwar.dev'} color="violet">
-            Amit Raikwar
-          </a>{' '}
-          | All rights reserved
-        </Text>
-      </HoverBorderGradient>
     </Box>
   );
 };

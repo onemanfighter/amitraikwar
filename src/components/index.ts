@@ -5,5 +5,6 @@ export * from './Lights';
 export * from './MeteorEffect';
 export * from './Theme';
 export * from './TitleBox';
+export * from './Tooltip';
 export * from './3dPin';
 export * from './TypeWriterText';

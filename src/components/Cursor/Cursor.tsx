@@ -36,7 +36,7 @@ const FollowCursor = () => {
       style={{
         x: top === 0 ? x : left,
         y: top === 0 ? y : top,
-        backgroundColor: '#fff',
+        backgroundColor: '#FFFFFFC5',
         mixBlendMode: 'difference',
         zIndex: 999,
         position: 'fixed',
