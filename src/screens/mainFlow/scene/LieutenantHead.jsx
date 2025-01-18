@@ -16,8 +16,8 @@ const Model = forwardRef((props, ref) => {
     if (child.isMesh) {
       child.castShadow = true;
       child.receiveShadow = true;
-      child.material.metalness = 0.5;
-      child.material.roughness = 0.5;
+      child.material.metalness = 0.9;
+      child.material.roughness = 0.9;
       child.material.envMapIntensity = 1;
     }
   });
