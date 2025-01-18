@@ -66,6 +66,8 @@ const SocialNavigation = ({
           <MenuButton>
             <IconButton
               variant={'outline'}
+              borderColor={'gray'}
+              boxShadow={'0px 0px 20px 8px gray'}
               aria-label="Options"
               icon={<RobotIcon height={'2em'} width={'2em'} />}
             />
@@ -75,7 +77,7 @@ const SocialNavigation = ({
               backgroundColor: 'transparent',
               color: 'violet',
               padding: '0px',
-              boxShadow: '0px 0px 20px 8px violet',
+              boxShadow: '0px 0px 10px 8px gray',
             }}
           >
             {(['adam', 'lieutenant', 'copernicus'] as CharacterType[]).map(
@@ -95,9 +97,9 @@ const SocialNavigation = ({
         ref={ref}
         px={2}
         py={5}
-        border={'1px solid white'}
+        border={'1px solid gray'}
+        boxShadow={'0px 0px 20px 8px gray'}
         borderRadius={'30px'}
-        outline={'1px solid violet'}
         onMouseEnter={onMouseEnter(ref, '30px')}
         onMouseLeave={onMouseLeave}
       >
