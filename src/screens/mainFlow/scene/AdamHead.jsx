@@ -16,13 +16,13 @@ const Model = forwardRef((props, ref) => {
     if (child.isMesh) {
       child.castShadow = true;
       child.receiveShadow = true;
-      child.material.metalness = 0.7;
-      child.material.roughness = 0.5;
+      child.material.metalness = 0.9;
+      child.material.roughness = 0.6;
       child.material.envMapIntensity = 1;
     }
   });
   return (
-    <group ref={ref} position={[0, -1, -2]}>
+    <group ref={ref} position={[-1, -1, -2]} scale={2}>
       <primitive object={scene} {...props} />
     </group>
   );

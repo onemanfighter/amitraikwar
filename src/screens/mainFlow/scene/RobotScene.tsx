@@ -7,14 +7,16 @@ import { Box, Progress } from '@chakra-ui/react';
 import { useMousePositions } from '@hooks';
 import gsap from 'gsap';
 import { Mesh } from 'three';
+import { CharacterType } from '.';
 
 const LoaderComponent = () => {
   const { progress } = useProgress();
   return (
-    <Html center>
+    <Html>
       <Box width="100vw" height="100vh">
         <Progress width={300} value={progress} max={100} />
       </Box>
+      Loading...
     </Html>
   );
 };
@@ -22,12 +24,9 @@ const LoaderComponent = () => {
 const AdamHead = lazy(() => import('./AdamHead'));
 const LieutenantHead = lazy(() => import('./LieutenantHead'));
 const IonDrive = lazy(() => import('./IonDrive'));
+const Copernicus = lazy(() => import('./Copernicus'));
 
-const RobotScene = ({
-  type = 'lieutenant',
-}: {
-  type: 'adam' | 'lieutenant';
-}) => {
+const RobotScene = ({ type = 'copernicus' }: { type: CharacterType }) => {
   const { x, y } = useMousePositions();
   const ref = useRef<Mesh | null>(null);
   const tl = useRef<gsap.core.Timeline>();
@@ -40,8 +39,8 @@ const RobotScene = ({
     });
     if (!ref.current) return;
     tl.current.to(ref.current.rotation, {
-      y: x !== 0 ? x / 5000 - 0.18 : -0.25,
-      x: y !== 0 ? -y / 5000 - 0.17 : -0.2,
+      y: x !== 0 ? x / 5000 - 0.25 : -0.25,
+      x: y !== 0 ? -y / 5000 - 0.17 : -0.17,
       duration: 1.5,
     });
 
@@ -61,16 +60,18 @@ const RobotScene = ({
       dpr={[1, 2]}
       performance={{ min: 0.1, max: 1 }}
       camera={{
-        position: [0, -3, -20],
-        fov: 12,
+        position: type === 'copernicus' ? [0, -3, -20] : [0, -3, 20],
+        fov: 20,
       }}
     >
       <ambientLight intensity={0.5} color={'violet'} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-      <directionalLight position={[0, 0, 1]} intensity={0.5} />
+      <directionalLight position={[2, 0, 2]} intensity={0.1} color={'violet'} />
+      <directionalLight position={[-4, 1, 4]} intensity={0.2} color={'blue'} />
       <Suspense fallback={<LoaderComponent />}>
         {type === 'adam' ? (
           <AdamHead ref={ref} />
+        ) : type === 'copernicus' ? (
+          <Copernicus ref={ref} />
         ) : (
           <LieutenantHead ref={ref} />
         )}

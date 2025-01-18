@@ -1,6 +1,7 @@
 import { Box, HStack, Text } from '@chakra-ui/react';
-import { Card, HoverBorderGradient, ThreeDPin } from '@components';
+import { Card, ThreeDPin, WavyBackground } from '@components';
 import HeroText from './HeroText';
+import { zIndices } from 'src/components/Theme/fonts';
 
 const Contents = () => {
   return (
@@ -17,7 +18,14 @@ const Contents = () => {
       bg={'black'}
       color={'white'}
     >
-      <HeroText />
+      <WavyBackground
+        style={{
+          position: 'absolute',
+          zIndices: -1,
+        }}
+      >
+        <HeroText />
+      </WavyBackground>
       <HStack>
         <Card
           centerText="Hourcoding"

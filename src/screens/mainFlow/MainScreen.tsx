@@ -1,14 +1,12 @@
-import { Text } from '@chakra-ui/react';
 import { TitleBoxContainer, Lights, MeteorsEffect } from '@components';
 import { Footer, NavigationBar, SocialNavigation } from './components';
-import { RobotScene } from './scene';
+import { CharacterType, RobotScene } from './scene';
 import { useState } from 'react';
 import { Contents } from './contents';
 
 const MainScreen = () => {
-  const [characterType, setCharacterType] = useState<'adam' | 'lieutenant'>(
-    'lieutenant',
-  );
+  const [characterType, setCharacterType] =
+    useState<CharacterType>('copernicus');
   return (
     <TitleBoxContainer
       title={'Amit Raikwar | Portfolio'}
@@ -21,10 +19,10 @@ const MainScreen = () => {
     >
       <MeteorsEffect number={30} />
       <RobotScene type={characterType} />
-      {/* <Lights /> */}
+      <Lights />
       <NavigationBar />
       <SocialNavigation
-        handleCharacterClick={(type: 'adam' | 'lieutenant') => {
+        handleCharacterClick={(type) => {
           setCharacterType(type);
         }}
       />

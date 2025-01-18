@@ -23,6 +23,7 @@ const Footer = () => {
       p={2}
       bg={'black'}
       color={'white'}
+      marginTop={24}
     >
       <HoverBorderGradient>
         <FooterEndText />

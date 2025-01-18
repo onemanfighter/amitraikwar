@@ -7,7 +7,9 @@ const Lights = () => {
         position={'fixed'}
         top={0}
         right={0}
-        boxShadow={'0 0 40px 10px violet, 0 0 100px 40px violet'}
+        boxShadow={
+          '0 0 40px 10px blue, 0 0 100px 40px blue, 0 0 140px 60px blue'
+        }
       />
       <Box
         position={'fixed'}

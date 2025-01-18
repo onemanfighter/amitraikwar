@@ -17,12 +17,12 @@ const Model = forwardRef((props, ref) => {
       child.castShadow = true;
       child.receiveShadow = true;
       child.material.metalness = 0.5;
-      child.material.roughness = 0.2;
+      child.material.roughness = 0.5;
       child.material.envMapIntensity = 1;
     }
   });
   return (
-    <group ref={ref} position={[0, -0.3, -3]}>
+    <group ref={ref} position={[-1, -0.3, -3]} scale={1.3}>
       <primitive object={scene} {...props} />
     </group>
   );

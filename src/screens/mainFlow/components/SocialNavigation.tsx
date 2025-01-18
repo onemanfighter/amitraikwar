@@ -18,6 +18,7 @@ import {
 } from '@chakra-ui/react';
 import { useCursor } from '@components';
 import { RefObject, useRef } from 'react';
+import { CharacterType } from '../scene';
 
 const IconProps = {
   variant: 'ghost',
@@ -32,7 +33,7 @@ const IconProps = {
 const SocialNavigation = ({
   handleCharacterClick: handlerCharacterClick,
 }: {
-  handleCharacterClick: (type: 'adam' | 'lieutenant') => void;
+  handleCharacterClick: (type: CharacterType) => void;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLDivElement>(null);
@@ -55,7 +56,7 @@ const SocialNavigation = ({
     setCursorInsets(undefined);
   };
   return (
-    <VStack position={'fixed'} bottom={20} right={10} rowGap={10}>
+    <VStack position={'fixed'} bottom={20} right={10} rowGap={10} zIndex={10}>
       <Box
         ref={menuButtonRef}
         onMouseEnter={onMouseEnter(menuButtonRef, '6px')}
@@ -77,16 +78,16 @@ const SocialNavigation = ({
               boxShadow: '0px 0px 20px 8px violet',
             }}
           >
-            <MenuItem onClick={() => handlerCharacterClick('adam')}>
-              <Text key={'adam'} fontSize={'xl'}>
-                Adam
-              </Text>
-            </MenuItem>
-            <MenuItem onClick={() => handlerCharacterClick('lieutenant')}>
-              <Text key={'Lieutenant'} fontSize={'xl'}>
-                Lieutenant
-              </Text>
-            </MenuItem>
+            {(['adam', 'lieutenant', 'copernicus'] as CharacterType[]).map(
+              (character: CharacterType) => (
+                <MenuItem
+                  key={character}
+                  onClick={() => handlerCharacterClick(character)}
+                >
+                  <Text fontSize={'xl'}>{character.toUpperCase()}</Text>
+                </MenuItem>
+              ),
+            )}
           </MenuList>
         </Menu>
       </Box>
