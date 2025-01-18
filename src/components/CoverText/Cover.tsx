@@ -24,6 +24,7 @@ export const Cover = ({ children }: { children?: React.ReactNode }) => {
       );
       setBeamPositions(positions);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref.current]);
 
   return (
