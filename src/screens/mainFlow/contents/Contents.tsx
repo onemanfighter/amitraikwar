@@ -1,5 +1,5 @@
 import { Box, Text } from '@chakra-ui/react';
-import { Card } from '@components';
+import { Card, ThreeDPin } from '@components';
 
 const Contents = () => {
   return (
@@ -15,12 +15,14 @@ const Contents = () => {
       bg={'black'}
       color={'white'}
     >
-      <Card
-        centerText="Hourcoding"
-        titleText="Hourcoding.com"
-        subtitleText="A blog about coding and programming"
-        chipText="React, Next.js, TypeScript, Chakra UI"
-      />
+      <ThreeDPin title="Hourcoding.com" href="https://hourcoding.com">
+        <Card
+          centerText="Hourcoding"
+          titleText="Hourcoding.com"
+          subtitleText="A blog about coding and programming"
+          chipText="React, Next.js, TypeScript, Chakra UI"
+        />
+      </ThreeDPin>
     </Box>
   );
 };
