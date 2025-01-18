@@ -2,17 +2,11 @@
 import { Canvas } from '@react-three/fiber';
 import { lazy, Suspense, useEffect, useRef } from 'react';
 
-import {
-  Environment,
-  Html,
-  OrbitControls,
-  ScrollControls,
-  useProgress,
-} from '@react-three/drei';
+import { Environment, Html, useProgress } from '@react-three/drei';
 import { Box, Progress } from '@chakra-ui/react';
 import { useMousePositions } from '@hooks';
 import gsap from 'gsap';
-import { DirectionalLight, Mesh } from 'three';
+import { Mesh } from 'three';
 
 const LoaderComponent = () => {
   const { progress } = useProgress();
@@ -80,9 +74,6 @@ const RobotScene = ({
         ) : (
           <LieutenantHead ref={ref} />
         )}
-      </Suspense>
-      <Suspense>
-        <IonDrive />
       </Suspense>
       <Environment preset="city" blur={0.8} />
     </Canvas>

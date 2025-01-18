@@ -1,9 +1,11 @@
-import { Box, Text } from '@chakra-ui/react';
-import { Card, ThreeDPin } from '@components';
+import { Box, HStack, Text } from '@chakra-ui/react';
+import { Card, HoverBorderGradient, ThreeDPin } from '@components';
+import HeroText from './HeroText';
 
 const Contents = () => {
   return (
     <Box
+      marginTop={10}
       minH={'100vh'}
       display={'flex'}
       bottom={0}
@@ -15,14 +17,32 @@ const Contents = () => {
       bg={'black'}
       color={'white'}
     >
-      <ThreeDPin title="Hourcoding.com" href="https://hourcoding.com">
+      <HeroText />
+      <HStack>
         <Card
           centerText="Hourcoding"
           titleText="Hourcoding.com"
           subtitleText="A blog about coding and programming"
           chipText="React, Next.js, TypeScript, Chakra UI"
         />
-      </ThreeDPin>
+        <ThreeDPin title="Hourcoding.com" href="https://hourcoding.com">
+          <Card
+            centerText="Hourcoding"
+            titleText="Hourcoding.com"
+            subtitleText="A blog about coding and programming"
+            chipText="React, Next.js, TypeScript, Chakra UI"
+          />
+        </ThreeDPin>
+      </HStack>
+      <HoverBorderGradient>
+        <Text fontSize={'md'}>
+          © {new Date().getFullYear()}{' '}
+          <a href={'https://amitraikwar.dev'} color="violet">
+            Amit Raikwar
+          </a>{' '}
+          | All rights reserved
+        </Text>
+      </HoverBorderGradient>
     </Box>
   );
 };

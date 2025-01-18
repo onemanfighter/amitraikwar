@@ -1,5 +1,5 @@
 import { Text } from '@chakra-ui/react';
-import { TitleBoxContainer, Lights } from '@components';
+import { TitleBoxContainer, Lights, MeteorsEffect } from '@components';
 import { Footer, NavigationBar, SocialNavigation } from './components';
 import { RobotScene } from './scene';
 import { useState } from 'react';
@@ -13,12 +13,14 @@ const MainScreen = () => {
     <TitleBoxContainer
       title={'Amit Raikwar | Portfolio'}
       bg={'black'}
-      minHeight={'100vh'}
       minW={'99vw'}
       display={'flex'}
       flexDir={'column'}
+      alignItems={'center'}
+      overflowX={'hidden'}
     >
-      {/* <RobotScene type={characterType} /> */}
+      <MeteorsEffect number={30} />
+      <RobotScene type={characterType} />
       <Lights />
       <NavigationBar
         handleCharacterClick={(type: 'adam' | 'lieutenant') => {

@@ -17,7 +17,7 @@ const NavigationBar = ({
   return (
     <HStack
       position={'fixed'}
-      top={10}
+      marginY={8}
       w={'100%'}
       px={10}
       justifyContent={'space-between'}
