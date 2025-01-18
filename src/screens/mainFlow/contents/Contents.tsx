@@ -1,5 +1,5 @@
 import { Box, HStack, Text } from '@chakra-ui/react';
-import { Card, ThreeDPin, WavyBackground } from '@components';
+import { Card, CoverText, ThreeDPin, WavyBackground } from '@components';
 import HeroText from './HeroText';
 import { zIndices } from 'src/components/Theme/fonts';
 
@@ -18,6 +18,7 @@ const Contents = () => {
       bg={'black'}
       color={'white'}
     >
+      <CoverText text="Hello, I am " highlightedText="Amit Raikwar" />
       <WavyBackground
         style={{
           position: 'absolute',

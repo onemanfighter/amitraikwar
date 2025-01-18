@@ -1,5 +1,6 @@
 export * from './Button';
 export * from './CardComponent';
+export * from './CoverText';
 export * from './Cursor';
 export * from './Lights';
 export * from './MeteorEffect';
