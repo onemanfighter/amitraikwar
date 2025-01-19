@@ -1,4 +1,3 @@
-import { AboutMe } from '@data';
 import Fuse from 'fuse.js';
 
 const fuseOptions = {
@@ -18,6 +17,6 @@ const fuseOptions = {
   keys: ['title', 'author.firstName'],
 };
 
-const fuse = new Fuse(AboutMe, fuseOptions);
+const fuse = new Fuse([], fuseOptions);
 
 export default fuse;

@@ -1,1 +1,2 @@
-export { AboutMe } from './aboutme';
+export { ProjectsData } from './Projects';
+export * from './types';

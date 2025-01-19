@@ -1,3 +1,4 @@
+export * from './animateModal';
 export * from './Button';
 export * from './CardComponent';
 export * from './CoverText';
@@ -7,6 +8,7 @@ export * from './MeteorEffect';
 export * from './Theme';
 export * from './TitleBox';
 export * from './Tooltip';
+export * from './Timeline';
 export * from './3dPin';
 export * from './TypeWriterText';
 export * from './ShinyText';

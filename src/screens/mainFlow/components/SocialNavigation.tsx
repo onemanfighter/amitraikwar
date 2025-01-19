@@ -59,6 +59,7 @@ const SocialNavigation = ({
     <VStack position={'fixed'} bottom={20} right={14} rowGap={10} zIndex={10}>
       <Box
         ref={menuButtonRef}
+        zIndex={101}
         onMouseEnter={onMouseEnter(menuButtonRef, '6px')}
         onMouseLeave={onMouseLeave}
       >

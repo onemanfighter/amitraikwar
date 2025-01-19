@@ -1,15 +1,17 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Heading, HStack, Text, VStack } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
-    <Box zIndex={100} height={'100vh'} width={'100vw'} id="contact">
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec
-        purus auctor, ultricies dui vel, ultricies nunc. Sed scelerisque, nunc
-        nec volutpat auctor, libero
-      </p>
-    </Box>
+    <VStack minH={'100vh'} id="contact" paddingTop={24}>
+      <Box rowGap={10}>
+        <Heading textAlign={'start'}>{t('about.title')}</Heading>
+        <HStack>
+          <Text>{t('about.aboutMe')}</Text>
+        </HStack>
+      </Box>
+    </VStack>
   );
 };
 

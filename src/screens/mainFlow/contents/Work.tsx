@@ -1,14 +1,18 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 const Work = () => {
+  const { t } = useTranslation();
   return (
-    <Box zIndex={100} height={'100vh'} width={'100vw'} id="work">
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec
-        purus auctor, ultricies dui vel, ultricies nunc. Sed scelerisque, nunc
-        nec volutpat auctor, libero
-      </p>
+    <Box
+      zIndex={100}
+      height={'100vh'}
+      width={'100vw'}
+      id="work"
+      paddingX={32}
+      paddingY={24}
+    >
+      <Heading>{t('work.title')}</Heading>
     </Box>
   );
 };

@@ -3,10 +3,30 @@ import { LinkButton, useCursor } from '@components';
 import AmitRaikwarLogo from '@assets/images/AmitRaikwarLogo.png';
 import { SearchIcon } from '@assets';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
-const NavigationLink = ['About', 'Work', 'Contact', 'Articles'];
+const NavigationLink = [
+  {
+    name: 'navigation.projects',
+    href: 'projects',
+  },
+  {
+    name: 'navigation.work',
+    href: 'work',
+  },
+  {
+    name: 'navigation.about',
+    href: 'about',
+  },
+];
+
+const ArticleLink = {
+  name: 'navigation.articles',
+  href: 'articles',
+};
 
 const NavigationBar = () => {
+  const { t } = useTranslation();
   const ref = useRef<HTMLDivElement>(null);
   const { setCursorInsets } = useCursor();
 
@@ -58,16 +78,22 @@ const NavigationBar = () => {
           backdropFilter={'blur(20px)'}
           transition={'background-color 0.3s'}
         >
-          {NavigationLink.map((link) => (
+          {NavigationLink.map(({ name, href }) => (
             <LinkButton
-              key={link}
-              text={link}
-              href={`#${link.toLowerCase()}`}
+              key={name}
+              text={t(name)}
+              href={`#${href}`}
               fontSize={'lg'}
               animationOnHover
             />
           ))}
-
+          <LinkButton
+            key={ArticleLink.name}
+            text={t(ArticleLink.name)}
+            href={ArticleLink.href}
+            fontSize={'lg'}
+            animationOnHover
+          />
           <Box
             padding="0.2"
             borderRadius="100px"
@@ -77,7 +103,7 @@ const NavigationBar = () => {
           >
             <LinkButton
               key={'Contact'}
-              text={'Contact'}
+              text={t('navigation.contact')}
               href={'#contact'}
               fontSize={'lg'}
             />

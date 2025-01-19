@@ -1,13 +1,12 @@
-import { Box, HStack, Text } from '@chakra-ui/react';
-import { Card, CoverText, ThreeDPin, WavyBackground } from '@components';
-import HeroText from './HeroText';
-import { zIndices } from 'src/components/Theme/fonts';
+import { Box } from '@chakra-ui/react';
 import AboutMe from './AboutMe';
 import Work from './Work';
-import Projects from './Projects';
+import { Projects } from './projects';
 import Contact from './Contact';
+import { useTranslation } from 'react-i18next';
 
 const Contents = () => {
+  const { t } = useTranslation();
   return (
     <Box
       marginTop={10}
@@ -18,17 +17,12 @@ const Contents = () => {
       justifyContent={'center'}
       width={'100%'}
       bg={'black'}
-      paddingX={20}
+      paddingX={32}
       color={'white'}
     >
-      <CoverText
-        text="Hello, I am "
-        highlightedText="Amit Raikwar"
-        role="Full Stack Developer"
-      />
-      <AboutMe />
-      <Work />
       <Projects />
+      <Work />
+      <AboutMe />
       <Contact />
     </Box>
   );

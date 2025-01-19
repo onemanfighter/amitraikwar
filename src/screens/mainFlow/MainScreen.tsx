@@ -1,12 +1,9 @@
-import { TitleBoxContainer, Lights, MeteorsEffect } from '@components';
-import { Footer, NavigationBar, SocialNavigation } from './components';
-import { CharacterType, RobotScene } from './scene';
-import { useState } from 'react';
+import { TitleBoxContainer } from '@components';
+import { Footer, NavigationBar } from './components';
 import { Contents } from './contents';
+import { CoverContent } from './CoverContent';
 
 const MainScreen = () => {
-  const [characterType, setCharacterType] =
-    useState<CharacterType>('copernicus');
   return (
     <TitleBoxContainer
       title={'Amit Raikwar | Portfolio'}
@@ -17,15 +14,8 @@ const MainScreen = () => {
       alignItems={'center'}
       overflowX={'hidden'}
     >
-      <MeteorsEffect number={30} />
-      <RobotScene type={characterType} />
-      <Lights />
       <NavigationBar />
-      <SocialNavigation
-        handleCharacterClick={(type) => {
-          setCharacterType(type);
-        }}
-      />
+      <CoverContent />
       <Contents />
       <Footer />
     </TitleBoxContainer>

@@ -1,45 +1,40 @@
 {
-  "MainHomeScreen": {
-    "title": "Amit Raikwar",
-    "navigation": {
-      "title": "Amit Raikwar",
-      "button": {
-        "home": "Home",
-        "about": "About",
-        "experience": "Experience",
-        "projects": "Projects",
-        "skills": "Skills",
-        "resume": "Resume",
-        "blogs": "Blogs",
-        "contact": "Contact"
-      },
-      "version": "Version 1.0.0"
-    },
-    "sidebar": {
-      "downloadCV": "Download CV",
-      "details": {
-        "emailHeader": "Email",
-        "email": "raikwar.amit.1603@gmail.com",
-        "locationHeader": "Location",
-        "location": "India"
-      },
-      "post": "Software Engineer 3 @ RSLabs",
-      "version": "Version: "
-    }
-  },
-  "HomeScreen": {
-    "heyMessage": "Hey there! My name is",
+  "coverText": {
+    "greeting": "Hello, I am ",
     "name": "Amit Raikwar",
-    "whatIdoText": {
-      "text0": "I brainstorm ideas! 💡",
-      "text1": "I design solutions! 🎨",
-      "text2": "I code! 💻",
-      "text3": "I test the code! 🧪",
-      "text4": "I deploy the code! 🚀"
-    },
-    "aboutMe": {
-      "description": "I am a Software Engineer with 3 years of experience in building scalable🚀 and reliable🎯 software applications. I am passionate about building products that solve real-life problems and have a positive impact on society. I am a quick learner and always eager to learn new technologies and tools. I am a team player and love to work in a collaborative environment."
-    },
-    "copyrightText": "© 2024 Amit Raikwar. All rights reserved. Designed and developed by Amit Raikwar."
+    "role": "Full stack developer"
+  },
+  "navigation": {
+    "about": "About",
+    "work": "Work",
+    "projects": "Projects",
+    "skills": "Skills",
+    "articles": "Articles",
+    "contact": "Contact"
+  },
+  "about": {
+    "quoteHeading": "Crafting digital experiences that inspire",
+    "quoteSubheading": "Let your imagination run wild",
+    "title": "About Me",
+    "aboutMe": "I'm Amit Raikwar, a full-stack developer driven by a passion for crafting exceptional digital experiences. My expertise lies in React, React Native, and Node.js, enabling me to seamlessly build robust and engaging applications from the ground up. \n Beyond coding, I'm a lifelong learner, constantly exploring new technologies and ideas. I believe in a balanced life, embracing every opportunity for growth and discovery. \n I wake up each day with a desire to contribute meaningful solutions and make a positive impact."
+  },
+  "work": {
+    "title": "Work Experience"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "articles": {
+    "title": "Articles"
+  },
+  "footer": {
+    "copyrightText": "© {{year}} Amit Raikwar | All Rights Reserved",
+    "text": "Made with ❤️ by Amit Raikwar"
   }
 }
