@@ -38,11 +38,11 @@ const LinkButton = ({
 
   const translationProps = isHovered
     ? {
-        transform: 'translateY(12px)',
+        transform: 'translateY(16px)',
         transition: 'transform 0.2s',
       }
     : {
-        transform: 'translateY(-11px)',
+        transform: 'translateY(-15px)',
         transition: 'transform 0.2s',
       };
 
@@ -67,6 +67,7 @@ const LinkButton = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       justifyItems={'end'}
+      rowGap={2}
     >
       <Text
         pointerEvents={'none'}
