@@ -9,4 +9,5 @@ export * from './TitleBox';
 export * from './Tooltip';
 export * from './3dPin';
 export * from './TypeWriterText';
+export * from './ShinyText';
 export * from './WavyBackground';

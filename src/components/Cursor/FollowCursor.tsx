@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import { useSpringMousePosition } from '../../hooks';
+import { useMousePositions, useSpringMousePosition } from '../../hooks';
 import { useCursor } from './CursorProvider';
 
 const FollowCursor = () => {
@@ -9,8 +9,8 @@ const FollowCursor = () => {
   const { x, y } = useSpringMousePosition(ref);
 
   const { width, height, top, left, borderRadius } = insets ?? {
-    width: 56,
-    height: 56,
+    width: 32,
+    height: 32,
     top: 0,
     left: 0,
     borderRadius: '5px',
@@ -25,7 +25,6 @@ const FollowCursor = () => {
 
   useEffect(() => {
     // Initial position
-
     ref.current!.style.transform = `translate(${x}px, ${y}px)`;
   }, [x, y, insets]);
 

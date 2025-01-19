@@ -34,7 +34,7 @@ const NavigationBar = () => {
       w={'100%'}
       paddingRight={14}
       paddingLeft={32}
-      zIndex={10}
+      zIndex={1000}
       justifyContent={'space-between'}
     >
       <Img

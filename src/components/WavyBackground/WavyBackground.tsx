@@ -115,9 +115,10 @@ const WavyBackground = ({
         'h-screen flex flex-col items-center justify-center mx-auto pb-20'
       }
       style={{
+        height: '30vh',
         zIndex: 0,
+        top: 0,
         overflowX: 'clip',
-        marginTop: '-25vh',
         mixBlendMode: 'lighten',
       }}
     >
@@ -129,7 +130,13 @@ const WavyBackground = ({
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}
       ></canvas>
-      <div className={'z-0'} {...props}>
+      <div
+        className={'z-0'}
+        style={{
+          position: 'absolute',
+        }}
+        {...props}
+      >
         {children}
       </div>
     </div>

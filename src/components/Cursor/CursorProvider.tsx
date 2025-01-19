@@ -1,8 +1,10 @@
 import { createContext, useContext, useState } from 'react';
-import FollowCursor from './Cursor';
+import FollowCursor from './FollowCursor';
+import SplashCursor from './SplashCursor';
+
+export type CursorType = 'follow' | 'splash';
 
 export const CursorContext = createContext<{
-  cursorState: boolean;
   insets:
     | {
         height: number;
@@ -12,7 +14,7 @@ export const CursorContext = createContext<{
         borderRadius?: string;
       }
     | undefined;
-  toggle: () => void;
+  setCursorType: (type: CursorType) => void;
   setCursorInsets: (
     args:
       | {
@@ -25,10 +27,9 @@ export const CursorContext = createContext<{
       | undefined,
   ) => void;
 }>({
-  cursorState: true,
   insets: undefined,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  toggle: () => {},
+  setCursorType: (type: CursorType) => {},
   setCursorInsets: (
     args:
       | {
@@ -44,7 +45,7 @@ export const CursorContext = createContext<{
 });
 
 const CursorProvider = ({ children }: { children: React.ReactNode }) => {
-  const [cursorState, setCursorState] = useState(true);
+  const [cursorType, setCursorTypeState] = useState<CursorType>('follow');
   const [insets, setCursorSize] = useState<
     | {
         height: number;
@@ -56,8 +57,8 @@ const CursorProvider = ({ children }: { children: React.ReactNode }) => {
     | undefined
   >(undefined);
 
-  const toggle = () => {
-    setCursorState((prev) => !prev);
+  const setCursorType = (type: CursorType) => {
+    setCursorTypeState(type);
   };
 
   const setCursorInsets = (
@@ -75,9 +76,13 @@ const CursorProvider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <CursorContext.Provider
-      value={{ cursorState, insets, toggle, setCursorInsets }}
+      value={{
+        insets,
+        setCursorType,
+        setCursorInsets,
+      }}
     >
-      <FollowCursor />
+      {cursorType === 'splash' ? <SplashCursor /> : <FollowCursor />}
       {children}
     </CursorContext.Provider>
   );

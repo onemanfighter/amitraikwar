@@ -3,8 +3,10 @@ import { RefObject, useEffect } from 'react';
 import { SPRING_SETTING } from './constants';
 
 const useSpringMousePosition = (ref: RefObject<HTMLDivElement | null>) => {
-  const xPoint = useMotionValue(0);
-  const yPoint = useMotionValue(0);
+  const xPos = window.innerWidth / 2;
+  const yPos = window.innerHeight / 2;
+  const xPoint = useMotionValue(xPos);
+  const yPoint = useMotionValue(yPos);
   const x = useSpring(xPoint, SPRING_SETTING);
   const y = useSpring(yPoint, SPRING_SETTING);
 
@@ -15,8 +17,8 @@ const useSpringMousePosition = (ref: RefObject<HTMLDivElement | null>) => {
       const element = ref.current!;
 
       frame.read(() => {
-        xPoint.set(clientX - element.offsetLeft - 56 / 2);
-        yPoint.set(clientY - element.offsetTop - 56 / 2);
+        xPoint.jump(clientX - element.offsetLeft - 56 / 2);
+        yPoint.jump(clientY - element.offsetTop - 56 / 2);
       });
     };
 

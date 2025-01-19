@@ -13,7 +13,7 @@ const LinkButton = ({
   fontSize,
 }: LinkButtonProps) => {
   const ref = useRef<HTMLButtonElement>(null);
-  const { toggle, setCursorInsets } = useCursor();
+  const { setCursorInsets } = useCursor();
   const [isHovered, setIsHovered] = useState(false);
 
   const onMouseEnter = () => {
@@ -28,14 +28,12 @@ const LinkButton = ({
     setTimeout(() => {
       setCursorInsets({ height, width, top, left, borderRadius: '5px' });
     }, 0);
-    toggle();
     setIsHovered(true);
   };
 
   const onMouseLeave = () => {
     setCursorInsets(undefined);
     setIsHovered(false);
-    toggle();
   };
 
   const translationProps = isHovered
