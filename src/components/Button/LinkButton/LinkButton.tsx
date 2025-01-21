@@ -11,6 +11,7 @@ const LinkButton = ({
   withUnderline,
   withArrow,
   fontSize,
+  onClick,
 }: LinkButtonProps) => {
   const ref = useRef<HTMLButtonElement>(null);
   const { setCursorInsets } = useCursor();
@@ -50,8 +51,6 @@ const LinkButton = ({
     <Button
       ref={ref}
       flexDir={'column'}
-      as="a"
-      href={href}
       bg={'transparent'}
       color={'white'}
       colorScheme="violet"
@@ -66,8 +65,10 @@ const LinkButton = ({
       rightIcon={withArrow ? <ArrowIcon /> : undefined}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onClick={() => onClick?.(href)}
       justifyItems={'end'}
       rowGap={2}
+      {...(!onClick ? { as: 'a', href } : {})}
     >
       <Text
         pointerEvents={'none'}

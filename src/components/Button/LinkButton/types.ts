@@ -7,4 +7,5 @@ export type LinkButtonProps = {
   withArrow?: boolean;
   animationOnHover?: boolean;
   fontSize?: BoxProps['fontSize'];
+  onClick?: (target: string) => void;
 };

@@ -1,0 +1,1153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Marquee should render the Marquee component 1`] = `
+<div>
+  <div
+    class="css-lhfv11"
+    style="display: flex; overflow: hidden; padding: 0.5rem; flex-direction: row;"
+  >
+    <style>
+      
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+          }
+          @keyframes marquee-vertical {
+            0% { transform: translateY(0%); }
+            100% { transform: translateY(-100%); }
+          }
+        
+    </style>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Marquee should render the Marquee component 2`] = `
+<div>
+  <div
+    class="css-lhfv11"
+    style="display: flex; overflow: hidden; padding: 0.5rem; flex-direction: row;"
+  >
+    <style>
+      
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+          }
+          @keyframes marquee-vertical {
+            0% { transform: translateY(0%); }
+            100% { transform: translateY(-100%); }
+          }
+        
+    </style>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Marquee should render the Marquee component with horizontal direction 1`] = `
+<div>
+  <div
+    class="css-lhfv11"
+    style="display: flex; overflow: hidden; padding: 0.5rem; flex-direction: row;"
+  >
+    <style>
+      
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+          }
+          @keyframes marquee-vertical {
+            0% { transform: translateY(0%); }
+            100% { transform: translateY(-100%); }
+          }
+        
+    </style>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Marquee should render the Marquee component with reverse false 1`] = `
+<div>
+  <div
+    class="css-lhfv11"
+    style="display: flex; overflow: hidden; padding: 0.5rem; flex-direction: row;"
+  >
+    <style>
+      
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+          }
+          @keyframes marquee-vertical {
+            0% { transform: translateY(0%); }
+            100% { transform: translateY(-100%); }
+          }
+        
+    </style>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+    <div
+      class="css-15jpxfq"
+    >
+      Test container
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Marquee should render the Marquee component with vertical direction 1`] = `
+<div>
+  <div
+    class="css-lhfv11"
+    style="display: flex; overflow: hidden; padding: 0.5rem; flex-direction: column;"
+  >
+    <style>
+      
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+          }
+          @keyframes marquee-vertical {
+            0% { transform: translateY(0%); }
+            100% { transform: translateY(-100%); }
+          }
+        
+    </style>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+    <div
+      class="css-3si7d9"
+    >
+      Test container
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Marquee should render the Marquee component without hover 1`] = `
+<div>
+  <div
+    class="css-lhfv11"
+    style="display: flex; overflow: hidden; padding: 0.5rem; flex-direction: row;"
+  >
+    <style>
+      
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+          }
+          @keyframes marquee-vertical {
+            0% { transform: translateY(0%); }
+            100% { transform: translateY(-100%); }
+          }
+        
+    </style>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+    <div
+      class="css-19uklyi"
+    >
+      Test container
+    </div>
+  </div>
+</div>
+`;

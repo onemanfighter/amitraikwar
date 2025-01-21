@@ -48,6 +48,13 @@ const NavigationBar = () => {
     setCursorInsets(undefined);
   };
 
+  const scrollToComponent = (target: string) => {
+    const element = document.getElementById(target);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <>
       <HStack
@@ -96,7 +103,7 @@ const NavigationBar = () => {
         zIndex={1000}
         position={'fixed'}
         columnGap={3}
-        bottom={4}
+        top={6}
         border={'1px solid gray'}
         padding="2"
         borderRadius="100px"
@@ -111,6 +118,7 @@ const NavigationBar = () => {
             href={`#${href}`}
             fontSize={'lg'}
             animationOnHover
+            onClick={() => scrollToComponent(href)}
           />
         ))}
         <LinkButton

@@ -7,7 +7,7 @@ describe('LocalizationProvider', () => {
     const { result } = renderHook(() => useTranslation());
     const { container } = render(
       <LocalizationProvider>
-        <div> {result.current.t('MainHomeScreen.title')} </div>
+        <div> {result.current.t('coverText.name')} </div>
       </LocalizationProvider>,
     );
 

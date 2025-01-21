@@ -6,7 +6,7 @@ import {
   ModalFooter,
   ModalTrigger,
 } from './AnimatedModal';
-import { Button, Heading } from '@chakra-ui/react';
+import { Box, Button, Heading, Text } from '@chakra-ui/react';
 
 const AnimatedModal = ({
   triggerText,
@@ -20,12 +20,20 @@ const AnimatedModal = ({
   websiteUrl: string;
 }) => {
   return (
-    <div className="py-40 flex items-center justify-center">
+    <Box height={10} className="flex items-center justify-center">
       <Modal>
-        <ModalTrigger className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">
-          <span className="text-center transition duration-500">
+        <ModalTrigger className="bg-white flex justify-center group/modal-btn">
+          <Text
+            height={10}
+            border={'1px solid gray'}
+            boxShadow={'0 0 10px 2px #ffffff5a'}
+            style={{
+              padding: '0.5rem 1rem',
+              borderRadius: '0.5rem',
+            }}
+          >
             {triggerText}
-          </span>
+          </Text>
         </ModalTrigger>
         <ModalBody>
           <ModalContent>
@@ -57,7 +65,7 @@ const AnimatedModal = ({
           </ModalFooter>
         </ModalBody>
       </Modal>
-    </div>
+    </Box>
   );
 };
 

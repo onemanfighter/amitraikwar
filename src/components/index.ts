@@ -1,6 +1,7 @@
 export * from './animateModal';
 export * from './Button';
 export * from './CardComponent';
+export * from './Chip';
 export * from './CoverText';
 export * from './Cursor';
 export * from './Lights';
