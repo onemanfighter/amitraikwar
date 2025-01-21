@@ -12,5 +12,6 @@ export * from './SpotlightCard';
 export * from './Timeline';
 export * from './3dPin';
 export * from './TypeWriterText';
+export * from './GenerateText';
 export * from './ShinyText';
 export * from './WavyBackground';

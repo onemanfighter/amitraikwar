@@ -1,8 +1,9 @@
-import { Box, Heading, HStack, Text, VStack } from '@chakra-ui/react';
+import { Heading, HStack, VStack } from '@chakra-ui/react';
 import { useCursor } from '@components';
 import { useIsIntersecting } from '@hooks';
 import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { TextGenerateEffect } from '@components';
 
 const AboutMe = () => {
   const { t } = useTranslation();
@@ -17,13 +18,18 @@ const AboutMe = () => {
   }, [isIntersecting, setCursorType]);
 
   return (
-    <VStack ref={containerRef} minH={'100vh'} id="about" paddingTop={24}>
-      <Box rowGap={10}>
-        <Heading textAlign={'start'}>{t('about.title')}</Heading>
-        <HStack>
-          <Text>{t('about.aboutMe')}</Text>
-        </HStack>
-      </Box>
+    <VStack
+      ref={containerRef}
+      minH={'100vh'}
+      id="about"
+      width={'99vw'}
+      paddingX={32}
+      paddingY={24}
+    >
+      <Heading width={'100%'} textAlign={'start'}>
+        {t('about.title')}
+      </Heading>
+      <TextGenerateEffect words={t('about.aboutMe')} />
     </VStack>
   );
 };
