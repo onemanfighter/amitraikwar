@@ -75,7 +75,7 @@ const ProjectItem = ({
   };
   return (
     <HStack width={'100%'} px={32} zIndex={100}>
-      <VStack width={'50%'} justifyContent={'center'}>
+      <VStack width={'40%'} justifyContent={'center'}>
         <Carousel
           axis="horizontal"
           dynamicHeight
@@ -94,7 +94,7 @@ const ProjectItem = ({
           ))}
         </Carousel>
       </VStack>
-      <CardSpotlight>
+      <CardSpotlight style={{ width: '55%' }}>
         <VStack
           width={'100%'}
           height={'55vh'}
