@@ -14,11 +14,9 @@ import {
   Text,
   Link,
   Wrap,
-  Box,
 } from '@chakra-ui/react';
-import { useCursor, AnimatedModal, Chip, PlusIcon } from '@components';
+import { useCursor, AnimatedModal, Chip, CardSpotlight } from '@components';
 import { ProjectItemType } from '@data';
-import { useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 const CustomIconButton = ({
@@ -28,25 +26,6 @@ const CustomIconButton = ({
   type?: 'github' | 'web';
   link: string;
 }) => {
-  const githubButtonRef = useRef<HTMLButtonElement>(null);
-  const { setCursorInsets } = useCursor();
-
-  const onMouseEnter = () => {
-    if (!githubButtonRef.current) return;
-    const { width, height, top, left } =
-      githubButtonRef.current.getBoundingClientRect();
-    setCursorInsets({
-      top: top,
-      left: left,
-      width: width,
-      height: height,
-      borderRadius: '0.5rem',
-    });
-  };
-
-  const onMouseLeave = () => {
-    setCursorInsets(undefined);
-  };
   return (
     <IconButton
       variant="outline"
@@ -64,9 +43,6 @@ const CustomIconButton = ({
       as={Link}
       href={link}
       isExternal
-      ref={githubButtonRef}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
     />
   );
 };
@@ -82,6 +58,21 @@ const ProjectItem = ({
   tags,
   demoVideo,
 }: ProjectItemType) => {
+  const { setCursorInsets } = useCursor();
+
+  const onMouseEnter = () => {
+    setCursorInsets({
+      top: 0,
+      left: 0,
+      width: 0,
+      height: 0,
+      borderRadius: '0.5rem',
+    });
+  };
+
+  const onMouseLeave = () => {
+    setCursorInsets(undefined);
+  };
   return (
     <HStack width={'100%'} px={32} zIndex={100}>
       <VStack width={'50%'} justifyContent={'center'}>
@@ -103,49 +94,48 @@ const ProjectItem = ({
           ))}
         </Carousel>
       </VStack>
-      <VStack
-        width={'50%'}
-        height={'55vh'}
-        alignItems={'flex-start'}
-        justifyContent={'space-between'}
-        padding={8}
-        margin={5}
-        border={'1px solid gray'}
-      >
-        <HStack justifyContent={'space-between'} width={'full'}>
-          <HStack>
-            <Heading size="lg">{title}</Heading>
-            {PROJECT_NAME_ICON_MAP[icon]}
-          </HStack>
-          <HStack>
-            <AnimatedModal
-              triggerText={'Demo'}
-              title={title}
-              videoUrl={demoVideo}
-              websiteUrl={link}
-            />
-            <CustomIconButton type="web" link={link} />
-            <CustomIconButton link={githubLink} />
-          </HStack>
-        </HStack>
-        <HStack justify={'flex-start'}>
-          <StarTrekIcon width={56} height={56} />
-          <Text>{description}</Text>
-        </HStack>
-        <VStack alignItems={'flex-start'} width={'100%'}>
-          {keyPoints.map((point) => (
-            <HStack key={point} justify={'flex-start'} paddingStart={3}>
-              <StarIcon />
-              <Text key={point}>{point}</Text>
+      <CardSpotlight>
+        <VStack
+          width={'100%'}
+          height={'55vh'}
+          alignItems={'flex-start'}
+          justifyContent={'space-between'}
+        >
+          <HStack justifyContent={'space-between'} width={'full'}>
+            <HStack>
+              <Heading size="lg">{title}</Heading>
+              {PROJECT_NAME_ICON_MAP[icon]}
             </HStack>
-          ))}
+            <HStack spacing={5}>
+              <AnimatedModal
+                triggerText={'Demo'}
+                title={title}
+                videoUrl={demoVideo}
+                websiteUrl={link}
+              />
+              <CustomIconButton type="web" link={link} />
+              <CustomIconButton link={githubLink} />
+            </HStack>
+          </HStack>
+          <HStack justify={'flex-start'}>
+            <StarTrekIcon width={56} height={56} />
+            <Text>{description}</Text>
+          </HStack>
+          <VStack alignItems={'flex-start'} width={'100%'}>
+            {keyPoints.map((point) => (
+              <HStack key={point} justify={'flex-start'} paddingStart={3}>
+                <StarIcon />
+                <Text key={point}>{point}</Text>
+              </HStack>
+            ))}
+          </VStack>
+          <Wrap>
+            {tags.map((tag) => (
+              <Chip key={tag} type={tag} />
+            ))}
+          </Wrap>
         </VStack>
-        <Wrap>
-          {tags.map((tag) => (
-            <Chip key={tag} type={tag} />
-          ))}
-        </Wrap>
-      </VStack>
+      </CardSpotlight>
     </HStack>
   );
 };

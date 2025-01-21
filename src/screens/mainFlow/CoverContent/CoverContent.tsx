@@ -12,7 +12,7 @@ const CoverContent = () => {
   return (
     <Box minH={'100vh'}>
       <MeteorsEffect number={30} />
-      {/* <RobotScene type={characterType} /> */}
+      <RobotScene type={characterType} />
       <CoverText
         text={t('coverText.greeting')}
         highlightedText={t('coverText.name')}
