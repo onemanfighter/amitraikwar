@@ -112,9 +112,7 @@ const WavyBackground = ({
 
   return (
     <div
-      className={
-        'flex flex-col items-center justify-center mx-auto pb-20'
-      }
+      className={'flex flex-col items-center justify-center mx-auto pb-20'}
       style={{
         height: '20vh',
         zIndex: 0,

@@ -10,7 +10,13 @@ describe('Marquee', () => {
 
   it('should render the Marquee component', () => {
     const { container } = render(
-      <Marquee repeat={40} duration={10} gap={4} pauseOnHover={true} reverse={true}>
+      <Marquee
+        repeat={40}
+        duration={10}
+        gap={4}
+        pauseOnHover={true}
+        reverse={true}
+      >
         Test container
       </Marquee>,
     );
@@ -20,7 +26,14 @@ describe('Marquee', () => {
 
   it('should render the Marquee component with vertical direction', () => {
     const { container } = render(
-      <Marquee repeat={40} duration={10} gap={4} pauseOnHover={true} reverse={true} vertical={true}>
+      <Marquee
+        repeat={40}
+        duration={10}
+        gap={4}
+        pauseOnHover={true}
+        reverse={true}
+        vertical={true}
+      >
         Test container
       </Marquee>,
     );

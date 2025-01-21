@@ -13,7 +13,10 @@ const Marquee = ({
 }: MarqueeProps) => {
   const [isHovering, setHovering] = useState(false);
   const hoverProps = pauseOnHover
-    ? { onMouseEnter: () => setHovering(true), onMouseLeave: () => setHovering(false) }
+    ? {
+        onMouseEnter: () => setHovering(true),
+        onMouseLeave: () => setHovering(false),
+      }
     : {};
   return (
     <Box
