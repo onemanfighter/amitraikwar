@@ -7,12 +7,10 @@ const Work = () => {
     <Box
       zIndex={100}
       height={'100vh'}
-      width={'100vw'}
+      width={'99vw'}
       id="work"
-      position={'sticky'}
-      top={'15vh'}
       paddingX={32}
-      paddingY={{ base: 16, md: 24 }}
+      paddingY={24}
     >
       <Heading>{t('work.title')}</Heading>
     </Box>
