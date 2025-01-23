@@ -73,8 +73,9 @@ const ProjectItem = ({
   const onMouseLeave = () => {
     setCursorInsets(undefined);
   };
+
   return (
-    <HStack width={'100%'} px={32} zIndex={100}>
+    <HStack width={'100%'} px={32} zIndex={10}>
       <VStack width={'40%'} justifyContent={'center'}>
         <Carousel
           axis="horizontal"
@@ -94,7 +95,11 @@ const ProjectItem = ({
           ))}
         </Carousel>
       </VStack>
-      <CardSpotlight style={{ width: '55%' }}>
+      <CardSpotlight
+        style={{
+          width: '55%',
+        }}
+      >
         <VStack
           width={'100%'}
           height={'55vh'}

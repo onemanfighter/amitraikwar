@@ -1,18 +1,14 @@
-import { Box } from '@chakra-ui/react';
 import { useEffect, useRef, useState } from 'react';
 import { createNoise3D } from 'simplex-noise';
 
 const WavyBackground = ({
   children,
-  className,
-  containerClassName,
   colors,
   waveWidth,
   backgroundFill,
   blur = 10,
   speed = 'fast',
   waveOpacity = 0.5,
-  ...props
 }: {
   children?: any;
   className?: string;
@@ -129,15 +125,8 @@ const WavyBackground = ({
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}
       ></canvas>
-      <Box
-        className={'z-0'}
-        style={{
-          position: 'absolute',
-        }}
-        {...props}
-      >
-        {children}
-      </Box>
+
+      {children}
     </div>
   );
 };

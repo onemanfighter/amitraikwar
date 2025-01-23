@@ -17,13 +17,11 @@ const Footer = () => {
     <Box
       display={'absolute'}
       flexDirection={'column'}
-      width={'100%'}
-      height={'220px'}
-      overflowY={'hidden'}
+      width={'99%'}
+      height={'230px'}
       p={2}
       bg={'black'}
       color={'white'}
-      marginY={24}
     >
       <HoverBorderGradient>
         <FooterEndText />

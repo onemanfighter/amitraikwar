@@ -50,4 +50,38 @@ export const ProjectsData: ProjectItemType[] = [
     ],
     demoVideo: 'mac/AR_Mac.webm',
   },
+  {
+    title: 'Mac OS App',
+    icon: ProjectName.MacOs,
+    description:
+      'Developed a web app of the Mac OS desktop using React and Tailwind CSS. This project is inspired by the Mac OS desktop.',
+    githubLink: 'https://www.github.com/onemanfighter/mac-os-app',
+    image: ['mac/AR_Mac1.png', 'mac/AR_Mac2.png', 'mac/AR_Mac3.png'],
+    link: 'https://mac.amitraikwar.in',
+    tags: [Language.react, Language.typescript, Language.chakra],
+    keyPoints: [
+      'This project is inspired by the Mac OS desktop.',
+      'It is built with React and Chakra ui.',
+      'Currently working on adding more features and improving the design.',
+      'Mac OS App supports various features like opening and closing of windows, changing the wallpaper, and more.',
+    ],
+    demoVideo: 'mac/AR_Mac.webm',
+  },
+  {
+    title: 'Mac OS App',
+    icon: ProjectName.MacOs,
+    description:
+      'Developed a web app of the Mac OS desktop using React and Tailwind CSS. This project is inspired by the Mac OS desktop.',
+    githubLink: 'https://www.github.com/onemanfighter/mac-os-app',
+    image: ['mac/AR_Mac1.png', 'mac/AR_Mac2.png', 'mac/AR_Mac3.png'],
+    link: 'https://mac.amitraikwar.in',
+    tags: [Language.react, Language.typescript, Language.chakra],
+    keyPoints: [
+      'This project is inspired by the Mac OS desktop.',
+      'It is built with React and Chakra ui.',
+      'Currently working on adding more features and improving the design.',
+      'Mac OS App supports various features like opening and closing of windows, changing the wallpaper, and more.',
+    ],
+    demoVideo: 'mac/AR_Mac.webm',
+  },
 ];

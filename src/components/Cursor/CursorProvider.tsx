@@ -82,7 +82,7 @@ const CursorProvider = ({ children }: { children: React.ReactNode }) => {
         setCursorInsets,
       }}
     >
-      {cursorType === 'splash' ? <SplashCursor /> : <FollowCursor />}
+      {cursorType === 'splash' ? <FollowCursor /> : <FollowCursor />}
       {children}
     </CursorContext.Provider>
   );

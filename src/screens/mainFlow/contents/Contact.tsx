@@ -5,11 +5,9 @@ const Contact = () => {
   const { t } = useTranslation();
   return (
     <VStack minH={'100vh'} id="contact" paddingTop={24}>
-      <Box rowGap={10}>
-        <Heading textAlign={'start'}>{t('about.title')}</Heading>
-        <HStack>
-          <Text>{t('about.aboutMe')}</Text>
-        </HStack>
+      <Box rowGap={10} width={'full'}>
+        <Heading textAlign={'start'}>{t('contact.title')}</Heading>
+        <HStack></HStack>
       </Box>
     </VStack>
   );

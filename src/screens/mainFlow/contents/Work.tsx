@@ -10,7 +10,7 @@ const Work = () => {
       width={'100vw'}
       id="work"
       paddingX={32}
-      paddingY={24}
+      paddingY={{ base: 16, md: 24 }}
     >
       <Heading>{t('work.title')}</Heading>
     </Box>
