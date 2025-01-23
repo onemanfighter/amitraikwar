@@ -9,6 +9,8 @@ const Work = () => {
       height={'100vh'}
       width={'100vw'}
       id="work"
+      position={'sticky'}
+      top={'15vh'}
       paddingX={32}
       paddingY={{ base: 16, md: 24 }}
     >

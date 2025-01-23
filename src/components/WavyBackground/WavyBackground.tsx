@@ -6,7 +6,7 @@ const WavyBackground = ({
   colors,
   waveWidth,
   backgroundFill,
-  blur = 10,
+  blur = 8,
   speed = 'fast',
   waveOpacity = 0.5,
 }: {
@@ -45,12 +45,12 @@ const WavyBackground = ({
     canvas = canvasRef.current;
     ctx = canvas.getContext('2d');
     w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
+    h = ctx.canvas.height = window.innerHeight / 2;
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
     window.onresize = function () {
       w = ctx.canvas.width = window.innerWidth;
-      h = ctx.canvas.height = window.innerHeight;
+      h = ctx.canvas.height = window.innerHeight / 2;
       ctx.filter = `blur(${blur}px)`;
     };
     render();
@@ -108,11 +108,10 @@ const WavyBackground = ({
 
   return (
     <div
-      className={'flex flex-col items-center justify-center mx-auto pb-20'}
+      className={'flex flex-col items-center justify-center mx-auto'}
       style={{
-        height: '20vh',
+        height: '15vh',
         zIndex: 0,
-        top: 0,
         overflowX: 'clip',
         mixBlendMode: 'lighten',
       }}
@@ -122,6 +121,8 @@ const WavyBackground = ({
         ref={canvasRef}
         id="canvas"
         style={{
+          height: '100vh',
+          width: '100%',
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}
       ></canvas>
