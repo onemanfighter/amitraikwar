@@ -11,7 +11,6 @@ const Contents = () => {
     <Box
       marginTop={10}
       display={'flex'}
-      bottom={0}
       flexDirection={'column'}
       alignItems={'center'}
       justifyContent={'center'}

@@ -12,7 +12,6 @@ const MainScreen = () => {
       display={'flex'}
       flexDir={'column'}
       alignItems={'center'}
-      overflowX={'hidden'}
     >
       <NavigationBar />
       <CoverContent />
