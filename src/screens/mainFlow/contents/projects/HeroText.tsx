@@ -1,18 +1,25 @@
 import { Box, Text } from '@chakra-ui/react';
+import { motion, MotionValue } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-const HeroText = () => {
+const HeroText = ({ opacity }: { opacity: MotionValue<number> }) => {
   const { t } = useTranslation();
 
   return (
-    <Box
-      zIndex={100}
-      position={'sticky'}
-      top={'8vh'}
-      overflowX={'hidden'}
-      fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
+    <motion.div
+      style={{
+        opacity,
+        zIndex: 100,
+        position: 'sticky',
+        top: '8vh',
+        overflowX: 'hidden',
+        fontSize: '5xl',
+      }}
     >
-      <Text className=" text-white font-bold inter-var text-center">
+      <Text
+        className=" text-white font-bold inter-var text-center"
+        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
+      >
         {t('about.quoteHeading')}
       </Text>
       <Text
@@ -21,7 +28,7 @@ const HeroText = () => {
       >
         {t('about.quoteSubheading')}
       </Text>
-    </Box>
+    </motion.div>
   );
 };
 
