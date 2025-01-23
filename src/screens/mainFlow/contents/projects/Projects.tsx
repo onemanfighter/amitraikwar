@@ -1,11 +1,10 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Box, VStack } from '@chakra-ui/react';
 import { ProjectsData } from '@data';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ProjectItem from './ProjectItem';
 import { WavyBackground } from '@components';
 import HeroText from './HeroText';
-import { useRef } from 'react';
 
 const Projects = () => {
   return (
